@@ -1,0 +1,93 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-cod-religious-centers-v10",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          15.173149999000032,
+          -12.437899999999969
+        ],
+        [
+          29.701728333000066,
+          -12.437899999999969
+        ],
+        [
+          29.701728333000066,
+          -2.583156666999965
+        ],
+        [
+          15.173149999000032,
+          -2.583156666999965
+        ],
+        [
+          15.173149999000032,
+          -12.437899999999969
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    15.173149999000032,
+    -12.437899999999969,
+    29.701728333000066,
+    -2.583156666999965
+  ],
+  "properties": {
+    "colletitle": "GRID3 COD - Religious Centers v1.0",
+    "datetime": "2024-05-10T00:00:00Z",
+    "created": null,
+    "updated": null,
+    "description": "The data are available for download in OGC Geopackage format contained in a zip file . This data release supersedes the dataset \u201c GRID3 COD - Religious Centers: five provinces v1.0 \u201d. This operational dataset has not been fully validated by government officials or ministries. Download province level data: Haut-Katanga Kasa\u00ef Kasa\u00ef-Oriental Kinshasa Lomami For more information on the methodology and data sources used during the production of this data, see the Data Release Notes . Dataset citation: Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Religious Centers v1.0. New York: GRID3. https://doi.org/10.7916/hesc-8041. Accessed . Contacts and data queries: The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "purpose": "The GRID3 COD - Religious Centers v1.0 dataset consists of spatial data points of religious centers with names and other attributes in the following provinces of the Democratic Republic of the Congo (COD): Haut-Katanga, Kasa\u00ef, Kasa\u00ef-Oriental, Kinshasa,\u00a0and\u00a0Lomami.",
+    "keywords": [
+      "COD",
+      "Democratic Republic of the Congo",
+      "POI",
+      "Religious Centers",
+      "Religious centers"
+    ],
+    "license": "other",
+    "providers": [
+      {
+        "name": "Center for International Earth Science Information Network (CIESIN)",
+        "roles": [
+          "producer"
+        ],
+        "url": "mailto:info@ciesin.columbia.edu"
+      }
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data_1": {
+      "href": "https://doi.org/10.7916/hesc-8041.",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-religious-centers-10"
+}

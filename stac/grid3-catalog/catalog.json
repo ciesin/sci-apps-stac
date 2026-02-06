@@ -37,7 +37,7 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-settlement-extents/catalog.json",
+      "href": "./grid3-settlement-names/catalog.json",
       "type": "application/json"
     },
     {
@@ -47,22 +47,7 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-schools/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-health-facilities/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-roads/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-travel-time-friction-surface/catalog.json",
+      "href": "./grid3-health-zones/catalog.json",
       "type": "application/json"
     },
     {
@@ -72,13 +57,38 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-health-zones/catalog.json",
+      "href": "./grid3-travel-time-friction-surface/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "child",
+      "href": "./grid3-health-facilities/catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-zones/catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Health Zones"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-settlement-extents/catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Settlement Extents"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-areas/catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Health Areas"
+    },
+    {
+      "rel": "child",
       "href": "./grid3-settlement-names/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "GRID3 Settlement Names"
     },
     {
       "rel": "parent",

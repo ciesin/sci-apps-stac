@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "grid3-health-facilities",
   "stac_version": "1.1.0",
-  "description": "GRID3 Health Facilities",
+  "description": "GRID3 datasets for GRID3 Health Facilities",
   "links": [
     {
       "rel": "root",
@@ -12,18 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-health-facilities-v20/collection.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-health-facilities-v10/collection.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
       "href": "./grid3-health-facilities-v80/collection.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v8.0"
     },
     {
       "rel": "parent",
@@ -31,5 +22,6 @@
       "type": "application/json",
       "title": "GRID3 Catalog"
     }
-  ]
+  ],
+  "title": "GRID3 Health Facilities"
 }

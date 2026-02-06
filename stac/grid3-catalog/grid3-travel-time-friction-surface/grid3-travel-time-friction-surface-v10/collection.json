@@ -20,10 +20,10 @@
     "spatial": {
       "bbox": [
         [
-          Infinity,
-          Infinity,
-          -Infinity,
-          -Infinity
+          -180,
+          -90,
+          180,
+          90
         ]
       ]
     },
