@@ -1,0 +1,95 @@
+{
+  "type": "Catalog",
+  "id": "ciesin-stac",
+  "stac_version": "1.1.0",
+  "description": "CIESIN STAC is the authoritative SpatioTemporal Asset Catalog for datasets produced and curated by the Center for International Earth Science Information Network (CIESIN) and affiliated programs, including GRID3.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "about",
+      "href": "https://ciesin.columbia.edu/content/data",
+      "title": "CIESIN data and documentation"
+    },
+    {
+      "rel": "Harvard Dataverse",
+      "href": "https://dataverse.harvard.edu/dataverse/CIESIN",
+      "title": "CIESIN datasets on Harvard Dataverse"
+    },
+    {
+      "rel": "contact",
+      "href": "mailto:info@ciesin.columbia.edu",
+      "title": "CIESIN data support"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Catalog metadata licensed under CC BY 4.0"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-catalog/catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "title": "CIESIN STAC"
+}

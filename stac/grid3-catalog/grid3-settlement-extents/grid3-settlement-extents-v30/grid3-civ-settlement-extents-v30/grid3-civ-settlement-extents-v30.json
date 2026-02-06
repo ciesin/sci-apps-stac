@@ -1,0 +1,110 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-civ-settlement-extents-v30",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -8.565091,
+          4.363243
+        ],
+        [
+          -2.52741,
+          4.363243
+        ],
+        [
+          -2.52741,
+          10.715924
+        ],
+        [
+          -8.565091,
+          10.715924
+        ],
+        [
+          -8.565091,
+          4.363243
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -8.565091,
+    4.363243,
+    -2.52741,
+    10.715924
+  ],
+  "properties": {
+    "colletitle": "GRID3 CIV - Settlement Extents v3.0",
+    "datetime": "2024-09-30T00:00:00Z",
+    "created": "2024-08-30T12:49:18Z",
+    "updated": "2024-09-24T19:36:42Z",
+    "description": "The two layers contained within the GRID3 CIV - Settlement Extents v3.0 include: GRID3_CIV_settlement_extents_v3.gpkg : a spatial layer representing settlement polygons. GRID3_CIV_settlement_grid_v3.gpkg : a spatial layer representing the centroids of settled grid cells. The current version supersedes GRID3 CIV - Settlement Extents v2.0 ; the following changes were made: Development of a new methodology to derive building counts and settlement polygons with open data. Estimation of a probability value for settlement polygons Addition of a building-area measure Replacement of degree of urbanization with classification based on built-up areas, small settlement areas, and hamlets Elimination of building-count ranges Elimination of variable comparing to previous versions For more information on data inputs, methodology, and codebooks please see the Data Release Notes . Recommended Citation: Center for International Earth Science Information Network (CIESIN), Columbia University. 2024. GRID3 CIV - Settlement Extents v3.0. New York: GRID3. https://doi.org/doi:10.7916/5f1x-1356. Accessed [DAY MONTH YEAR]. Terms of use: Users are free to download, store, access, use, copy, adapt, transform, alter, arrange, build upon, distribute and transmit this work and any derivative works. Attribution of the source must be provided, and further distribution of this work or derived work must maintain the same terms of data use and license as set forth in this Terms of Use. Copyright 2024. The Trustees of Columbia University in the City of New York. Data license: The data and accompanying document are licensed under a Creative Commons Attribution-ShareAlike 4.0 International, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0) and specified in legal code (https://creativecommons.org/licenses/by-sa/4.0/legalcode). Contacts and data queries: The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "purpose": "The GRID3 CIV - Settlement Extents v3.0 consists of a geographic representation of settlements in  C\u00f4te d'Ivoire, in two forms: 1) settlement polygons, and 2) spatial points depicting the centroids of settled grid cells at 3-arc seconds (or ~100 meters) contained within settlement polygons. Both layers include attributes as described in the codebooks. Data inputs and methodology are described in data release notes.",
+    "keywords": [
+      "CIV",
+      "C\u00f4te d'Ivoire",
+      "Extents",
+      "Settlement Extents",
+      "Settlements",
+      "v3"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "providers": [
+      {
+        "name": "Center for International Earth Science Information Network (CIESIN)",
+        "roles": [
+          "producer"
+        ],
+        "url": "mailto:info@ciesin.columbia.edu"
+      }
+    ],
+    "esri:scale_min": "150000000",
+    "esri:scale_max": "5000",
+    "esri:environment": "Esri ArcGIS 13.2.2.49743",
+    "esri:feature_count": "216211"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data_1": {
+      "href": "https://doi.org/doi:10.7916/5f1x-1356.",
+      "roles": [
+        "data"
+      ]
+    },
+    "data_2": {
+      "href": "https://creativecommons.org/licenses/by-sa/4.0)",
+      "roles": [
+        "data"
+      ]
+    },
+    "data_3": {
+      "href": "https://creativecommons.org/licenses/by-sa/4.0/legalcode).",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-settlement-extents-v30"
+}
