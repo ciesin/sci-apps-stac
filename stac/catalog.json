@@ -34,61 +34,6 @@
       "rel": "child",
       "href": "./grid3-catalog/catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "child",
-      "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
     }
   ],
   "title": "CIESIN STAC"
