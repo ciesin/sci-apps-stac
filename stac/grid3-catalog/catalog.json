@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "grid3-catalog",
   "stac_version": "1.1.0",
-  "description": "grid3-catalog",
+  "description": "Catalog of datasets produced and curated by GRID3",
   "links": [
     {
       "rel": "root",
@@ -11,8 +11,73 @@
       "title": "CIESIN STAC"
     },
     {
+      "rel": "grid3 data hub",
+      "href": "https://data.grid3.org/",
+      "title": "GRID3 Data Hub"
+    },
+    {
+      "rel": "Columbia Academic Commons",
+      "href": "https://academiccommons.columbia.edu/search?f%5Bauthor_ssim%5D%5B%5D=GRID3&search_field=all_fields",
+      "title": "GRID3 datasets on Columbia Academic Commons"
+    },
+    {
+      "rel": "contact",
+      "href": "mailto:info@ciesin.columbia.edu",
+      "title": "GRID3 data support"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Catalog metadata licensed under CC BY 4.0"
+    },
+    {
       "rel": "child",
       "href": "./grid3-settlement-extents/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-settlement-extents/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-religious-centers/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-schools/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-facilities/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-roads/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-travel-time-friction-surface/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-areas/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-zones/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-settlement-names/catalog.json",
       "type": "application/json"
     },
     {
@@ -21,5 +86,6 @@
       "type": "application/json",
       "title": "CIESIN STAC"
     }
-  ]
+  ],
+  "title": "GRID3 Catalog"
 }

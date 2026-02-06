@@ -32,8 +32,15 @@
     },
     {
       "rel": "child",
+      "href": "./ciesin-catalog/catalog.json",
+      "type": "application/json",
+      "title": "CIESIN Catalog"
+    },
+    {
+      "rel": "child",
       "href": "./grid3-catalog/catalog.json",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "GRID3 Catalog"
     }
   ],
   "title": "CIESIN STAC"

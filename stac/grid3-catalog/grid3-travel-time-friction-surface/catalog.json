@@ -1,8 +1,8 @@
 {
   "type": "Catalog",
-  "id": "grid3-settlement-extents",
+  "id": "grid3-travel-time-friction-surface",
   "stac_version": "1.1.0",
-  "description": "GRID3 Settlement Extents",
+  "description": "GRID3 Travel Time Friction Surface",
   "links": [
     {
       "rel": "root",
@@ -12,7 +12,7 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-settlement-extents-v30/collection.json",
+      "href": "./grid3-travel-time-friction-surface-v10/collection.json",
       "type": "application/json"
     },
     {
