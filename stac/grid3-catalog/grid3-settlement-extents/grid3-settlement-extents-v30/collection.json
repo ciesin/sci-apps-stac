@@ -12,22 +12,37 @@
     },
     {
       "rel": "item",
-      "href": "./grid3-nga-settlement-extents-v31/grid3-nga-settlement-extents-v31.json",
+      "href": "./grid3-lso-settlement-extents-v30/grid3-lso-settlement-extents-v30.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./grid3-mwi-settlement-extents-v30/grid3-mwi-settlement-extents-v30.json",
+      "href": "./grid3-mus-settlement-extents-v30/grid3-mus-settlement-extents-v30.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./grid3-moz-settlement-extents-v30/grid3-moz-settlement-extents-v30.json",
+      "href": "./grid3-bfa-settlement-extents-v30/grid3-bfa-settlement-extents-v30.json",
       "type": "application/geo+json"
     },
     {
       "rel": "item",
-      "href": "./grid3-ken-settlement-extents-v30/grid3-ken-settlement-extents-v30.json",
+      "href": "./grid3-ago-settlement-extents-v30/grid3-ago-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-mrt-settlement-extents-v30/grid3-mrt-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-gin-settlement-extents-v30/grid3-gin-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-ssd-settlement-extents-v30/grid3-ssd-settlement-extents-v30.json",
       "type": "application/geo+json"
     },
     {
@@ -42,17 +57,17 @@
     "spatial": {
       "bbox": [
         [
-          2.6824080000000663,
-          -26.86759,
-          41.902589,
-          13.885091000000044
+          -17.06343,
+          -30.658423,
+          63.498428,
+          27.289257
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2024-07-18T00:00:00Z",
+          "2024-09-30T00:00:00Z",
           "2024-09-30T00:00:00Z"
         ]
       ]

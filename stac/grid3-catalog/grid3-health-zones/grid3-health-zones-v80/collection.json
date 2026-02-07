@@ -16,11 +16,6 @@
       "type": "application/geo+json"
     },
     {
-      "rel": "item",
-      "href": "./grid3-cod-health-zones-v80/grid3-cod-health-zones-v80.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
