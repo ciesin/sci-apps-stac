@@ -46,6 +46,31 @@
       "type": "application/geo+json"
     },
     {
+      "rel": "item",
+      "href": "./grid3-stp-settlement-extents-v30/grid3-stp-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-sdn-settlement-extents-v30/grid3-sdn-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-rwa-settlement-extents-v30/grid3-rwa-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-myt-settlement-extents-v30/grid3-myt-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./grid3-eri-settlement-extents-v30/grid3-eri-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

@@ -49,6 +49,12 @@
       "title": "GRID3 Health Zones"
     },
     {
+      "rel": "child",
+      "href": "./grid3-settlement-names/catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Settlement Names"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

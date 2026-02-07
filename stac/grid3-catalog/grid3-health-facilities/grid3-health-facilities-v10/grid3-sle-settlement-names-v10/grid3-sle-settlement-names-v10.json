@@ -1,0 +1,97 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-sle-settlement-names-v10",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -13.295618,
+          6.932621
+        ],
+        [
+          -10.279584,
+          6.932621
+        ],
+        [
+          -10.279584,
+          9.99908
+        ],
+        [
+          -13.295618,
+          9.99908
+        ],
+        [
+          -13.295618,
+          6.932621
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -13.295618,
+    6.932621,
+    -10.279584,
+    9.99908
+  ],
+  "properties": {
+    "title": "GRID3 SLE - Settlement Names v1.0",
+    "datetime": "2023-09-14T09:48:08Z",
+    "created": "2023-09-14T09:48:08Z",
+    "updated": null,
+    "description": "The data are provided in geodatabase file formats. File name: GRID3_SLE_settlement_names_v1.0.gdb with the following layers: GRID3_SLE_settlement_names_v1.0 codebook_settlement_names Extent: Sierra Leone Coordinate system: GCS WGS 1984 For full methodological details, please see data release notes available for download here . Download the data as a zip file . Dataset citation: Center for International Earth Science Information Network (CIESIN), Columbia University, Statistics Sierra Leone, and Sierra Leone Ministry of Basic and Senior Secondary Education. 2023. GRID3 SLE - Settlement Names v1. 0. New York: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/bxa4-bv46. Accessed DAY MONTH YEAR",
+    "purpose": "The GRID3 SLE - Settlement Names v1.0 dataset consists of settlement points with name, and location in Sierra Leone.",
+    "keywords": [
+      "SLE",
+      "Settlement Names",
+      "Settlements",
+      "Sierra Leone"
+    ],
+    "license": "other",
+    "providers": [
+      {
+        "name": "Center for International Earth Science Information Network (CIESIN)",
+        "roles": [
+          "producer"
+        ],
+        "url": "mailto:info@ciesin.columbia.edu"
+      }
+    ],
+    "esri:scale_min": "150000000",
+    "esri:scale_max": "5000"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v1.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v1.0"
+    }
+  ],
+  "assets": {
+    "data_1": {
+      "href": "https://doi.org/10.7916/bxa4-bv46.",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-health-facilities-v10",
+  "title": "GRID3 SLE - Settlement Names v1.0"
+}
