@@ -39,7 +39,7 @@
     15.082591
   ],
   "properties": {
-    "colletitle": "GRID3 BFA - Settlement Extents v3.0",
+    "title": "GRID3 BFA - Settlement Extents v3.0",
     "datetime": "2024-09-30T00:00:00Z",
     "created": "2024-08-27T19:23:33Z",
     "updated": "2024-09-24T15:44:50Z",
@@ -108,5 +108,6 @@
       ]
     }
   },
-  "collection": "grid3-settlement-extents-v30"
+  "collection": "grid3-settlement-extents-v30",
+  "title": "GRID3 BFA - Settlement Extents v3.0"
 }

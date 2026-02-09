@@ -12,15 +12,21 @@
     },
     {
       "rel": "child",
-      "href": "./grid3-health-facilities-v80/collection.json",
+      "href": "./grid3-health-facilities-v20/collection.json",
       "type": "application/json",
-      "title": "GRID3 Health Facilities v8.0"
+      "title": "GRID3 Health Facilities v2.0"
     },
     {
       "rel": "child",
       "href": "./grid3-health-facilities-v10/collection.json",
       "type": "application/json",
       "title": "GRID3 Health Facilities v1.0"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-health-facilities-v80/collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v8.0"
     },
     {
       "rel": "parent",

@@ -39,7 +39,7 @@
     -28.574909
   ],
   "properties": {
-    "colletitle": "GRID3 LSO - Settlement Extents v3.0",
+    "title": "GRID3 LSO - Settlement Extents v3.0",
     "datetime": "2024-09-30T00:00:00Z",
     "created": "2024-08-27T19:16:56Z",
     "updated": "2024-09-25T10:25:25Z",
@@ -108,5 +108,6 @@
       ]
     }
   },
-  "collection": "grid3-settlement-extents-v30"
+  "collection": "grid3-settlement-extents-v30",
+  "title": "GRID3 LSO - Settlement Extents v3.0"
 }

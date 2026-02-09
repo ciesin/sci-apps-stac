@@ -39,7 +39,7 @@
     27.289257
   ],
   "properties": {
-    "colletitle": "GRID3 MRT - Settlement Extents v3.0",
+    "title": "GRID3 MRT - Settlement Extents v3.0",
     "datetime": "2024-09-30T00:00:00Z",
     "created": "2024-08-30T12:57:19Z",
     "updated": "2024-09-25T11:36:53Z",
@@ -108,5 +108,6 @@
       ]
     }
   },
-  "collection": "grid3-settlement-extents-v30"
+  "collection": "grid3-settlement-extents-v30",
+  "title": "GRID3 MRT - Settlement Extents v3.0"
 }

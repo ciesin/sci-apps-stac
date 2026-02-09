@@ -1,0 +1,27 @@
+{
+  "type": "Catalog",
+  "id": "grid3-schools",
+  "stac_version": "1.1.0",
+  "description": "GRID3 datasets for GRID3 Schools",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "child",
+      "href": "./grid3-schools-v10/collection.json",
+      "type": "application/json",
+      "title": "GRID3 Schools v1.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "GRID3 Catalog"
+    }
+  ],
+  "title": "GRID3 Schools"
+}

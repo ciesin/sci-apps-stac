@@ -1,0 +1,98 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-nga-health-facilities-v20",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.7077899999999997,
+          4.281709999999956
+        ],
+        [
+          14.636382573999791,
+          4.281709999999956
+        ],
+        [
+          14.636382573999791,
+          13.865238999999802
+        ],
+        [
+          2.7077899999999997,
+          13.865238999999802
+        ],
+        [
+          2.7077899999999997,
+          4.281709999999956
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    2.7077899999999997,
+    4.281709999999956,
+    14.636382573999791,
+    13.865238999999802
+  ],
+  "properties": {
+    "title": "GRID3 NGA - Health Facilities v2.0",
+    "datetime": "2024-11-13T00:00:00Z",
+    "created": "2024-11-08T13:45:29Z",
+    "updated": null,
+    "description": "This current version supersedes the GRID3 NGA - Health Facilities dataset; the following changes were made: Change of data schema Update of data inputs to incorporate records from the Nigeria Health Facility Registry (HFR, 2024). Schema and data attributes\u2019 standardization based on national guidelines For more information on the methodology and data sources used during the production of this data, see the Data Release Notes . Dataset citation Center for Integrated Earth System Information (CIESIN), Columbia University 2024. GRID3 NGA - Health Facilities v2.0. New York: GRID3.  https://doi.org/10.7916/kv1n-0743. Accessed [DAY MONTH YEAR]. Contacts and data queries The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
+    "purpose": "The GRID3 NGA - Health Facilities v2.0 dataset is a non-exhaustive, non-validated geographic representation of health facility points in Nigeria. The dataset incorporates recent updates from both the Nigeria Health Facility Registry (HFR) and GRID3. This dataset is considered operational.",
+    "keywords": [
+      "NGA",
+      "Nigeria",
+      "POI",
+      "health facilities",
+      "v2"
+    ],
+    "license": "other",
+    "providers": [
+      {
+        "name": "Center for Integrated Earth System Information (CIESIN)",
+        "roles": [
+          "producer"
+        ],
+        "url": "mailto:info@ciesin.columbia.edu"
+      }
+    ],
+    "esri:scale_min": "150000000",
+    "esri:scale_max": "5000"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v2.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v2.0"
+    }
+  ],
+  "assets": {
+    "data_1": {
+      "href": "https://doi.org/10.7916/kv1n-0743.",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-health-facilities-v20",
+  "title": "GRID3 NGA - Health Facilities v2.0"
+}
