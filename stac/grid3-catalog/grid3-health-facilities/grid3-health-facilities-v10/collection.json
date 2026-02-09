@@ -12,6 +12,11 @@
     },
     {
       "rel": "item",
+      "href": "./grid3-sle-health-facilities-v10/grid3-sle-health-facilities-v10.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
       "href": "./grid3-sle-settlement-names-v10/grid3-sle-settlement-names-v10.json",
       "type": "application/geo+json"
     },
@@ -37,7 +42,7 @@
     "temporal": {
       "interval": [
         [
-          "2023-09-14T09:48:08Z",
+          "2023-05-09T09:47:08Z",
           "2023-09-14T09:48:08Z"
         ]
       ]

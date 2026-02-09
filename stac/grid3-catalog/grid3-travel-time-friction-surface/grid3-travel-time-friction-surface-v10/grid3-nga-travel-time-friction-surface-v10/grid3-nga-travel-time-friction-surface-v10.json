@@ -1,0 +1,136 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-nga-travel-time-friction-surface-v10",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.505143,
+          4.2442
+        ],
+        [
+          14.8327,
+          4.2442
+        ],
+        [
+          14.8327,
+          13.967903
+        ],
+        [
+          2.505143,
+          13.967903
+        ],
+        [
+          2.505143,
+          4.2442
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    2.505143,
+    4.2442,
+    14.8327,
+    13.967903
+  ],
+  "properties": {
+    "datetime": "2025-09-18T10:32:58Z",
+    "created": "2025-09-18T10:32:58Z",
+    "updated": "2025-10-03T11:44:57Z",
+    "description": "The  GRID3 NGA - Travel Time Friction Surface v1.0 dataset is a spatial data layer in tiff format. The datasets contain 2 layers:\n-\nGRID3_NGA_walk_travel_time_friction_surface_v1_0.tif  - Applies walking speeds across the entire surface, adjusted for slope and elevation.\n-\nGRID3_NGA_mix_travel_time_friction_surface_v1_0.tif - Applies motorized speeds on roads and walking speeds in all other areas.\nThe resolution is 30 m. The unit of measurement in both surfaces is minutes per meter.\nDataset citation:\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2025. GRID3 NGA - Travel Time Friction Surface v1.0. New York: Columbia University. https://doi.org/10.7916/tw5k-ys98. Accessed <DAY MONTH YEAR>\nContacts and data queries:\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
+    "purpose": "The aim of this work is to generate two friction surfaces for modeling physical accessibility: one incorporating walking speed only, and another combining walking and motorized travel speeds. Motorized speeds are applied exclusively on roads that are present and passable by vehicles; in all other areas, walking speeds are used.",
+    "keywords": [
+      "NGA",
+      "NGA, Nigeria",
+      "Nigeria",
+      "Travel time",
+      "travel time"
+    ],
+    "iso:topic_categories": [
+      "016",
+      "018"
+    ],
+    "language": "eng",
+    "metadata_scope": "dataset",
+    "esri:scale_min": 20000000,
+    "esri:scale_max": 5000,
+    "esri:crs_name": "GCS_WGS_1984",
+    "esri:item_name": "GRID3_NGA_mix_travel_time_cost_surface_v1_0.tif",
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "esri:distribution_format": "Raster Dataset",
+    "proj:code": "EPSG:32632"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Travel Time Friction Surface v1.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Travel Time Friction Surface v1.0"
+    }
+  ],
+  "assets": {
+    "GRID3 NGA - Travel Time Friction Surface v1.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/tw5k-ys98",
+      "type": "text/html",
+      "title": "Download GRID3 NGA - Travel Time Friction Surface v1.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 NGA - Travel Time Friction Surface v1.0 - Data Release Notes ": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/1am9-ms73/download",
+      "type": "application/octet-stream",
+      "title": "GRID3 NGA - Travel Time Friction Surface v1.0 - Data Release Notes ",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_NGA_mix_travel_time_friction_surface_v1_0.zip": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/zvnx-2v35/download",
+      "type": "application/zip",
+      "title": "GRID3_NGA_mix_travel_time_friction_surface_v1_0.zip",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_NGA_walk_travel_time_friction_surface_v1_0.zip": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/97nc-wt39/download",
+      "type": "application/zip",
+      "title": "GRID3_NGA_walk_travel_time_friction_surface_v1_0.zip",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-travel-time-friction-surface-v10",
+  "title": "GRID3 NGA - Travel Time Friction Surface v1.0",
+  "license": "CC-BY-SA-4.0",
+  "providers": [
+    {
+      "name": "Center for Integrated Earth System Information (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
+}

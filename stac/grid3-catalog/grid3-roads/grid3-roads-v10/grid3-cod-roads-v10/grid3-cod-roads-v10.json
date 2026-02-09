@@ -1,0 +1,132 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-cod-roads-v10",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.209724,
+          -13.441882
+        ],
+        [
+          31.275572,
+          -13.441882
+        ],
+        [
+          31.275572,
+          5.344301
+        ],
+        [
+          12.209724,
+          5.344301
+        ],
+        [
+          12.209724,
+          -13.441882
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    12.209724,
+    -13.441882,
+    31.275572,
+    5.344301
+  ],
+  "properties": {
+    "datetime": "2026-01-08T00:00:00Z",
+    "created": "2026-01-08T00:00:00Z",
+    "updated": null,
+    "description": "For more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2026. GRID3 COD - Roads v1.0. New York: Columbia University. https://doi.org/10.7916/00gb-e164. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "purpose": "The GRID3 COD - Roads v1.0 spatial dataset consists of road and path locations in Democratic Republic of the Congo.",
+    "keywords": [
+      "COD",
+      "Democratic Republic of the Congo",
+      "Roads",
+      "roads"
+    ],
+    "iso:topic_categories": [
+      "013",
+      "016",
+      "018"
+    ],
+    "language": "eng",
+    "esri:scale_min": 150000000,
+    "esri:scale_max": 5000,
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "proj:code": "EPSG:4326"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Roads v1.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Roads v1.0"
+    }
+  ],
+  "assets": {
+    "GRID3 COD - Roads v1.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/00gb-e164",
+      "type": "text/html",
+      "title": "Download GRID3 COD - Roads v1.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 COD - Roads v1.0 - Data Release Notes.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/ekz8-yp85/download",
+      "type": "application/pdf",
+      "title": "GRID3 COD - Roads v1.0 - Data Release Notes.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "GRID3_COD_roads_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/vcra-te92/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_roads_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_roads_v1_0.xml": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/6ye2-g042/download",
+      "type": "application/xml",
+      "title": "GRID3_COD_roads_v1_0.xml",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
+  "collection": "grid3-roads-v10",
+  "title": "GRID3 COD - Roads v1.0",
+  "license": "CC-BY-SA-4.0",
+  "providers": [
+    {
+      "name": "Center for Integrated Earth System Information (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
+}

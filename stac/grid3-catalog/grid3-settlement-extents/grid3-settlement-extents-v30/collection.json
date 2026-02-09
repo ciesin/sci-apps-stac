@@ -77,6 +77,11 @@
     },
     {
       "rel": "item",
+      "href": "./grid3-eri-settlement-extents-v30/grid3-eri-settlement-extents-v30.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
       "href": "./grid3-eth-settlement-extents-v30/grid3-eth-settlement-extents-v30.json",
       "type": "application/geo+json"
     },

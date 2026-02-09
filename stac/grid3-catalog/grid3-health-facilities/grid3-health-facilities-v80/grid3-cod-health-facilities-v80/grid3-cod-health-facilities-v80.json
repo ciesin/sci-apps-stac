@@ -39,11 +39,10 @@
     5.134033
   ],
   "properties": {
-    "title": "GRID3 COD - Health Facilities v8.0",
     "datetime": "2025-07-31T12:07:55Z",
     "created": "2025-07-31T12:07:55Z",
     "updated": "2025-12-22T11:20:26Z",
-    "description": "The current version supersedes the GRID3 COD - Health Facilities v7.0 . The following changes were made: Added data for the provinces of Bas-Uele, Haut-Uele, Kwango, and Nord-Kivu The data for Tanganyika was updated Download province level data: Bas-Uele Equateur Haut-Katanga Haut-Lomami Haut-Uele Ituri Kasa\u00ef Kasa\u00ef-Central Kasa\u00ef-Oriental Kinshasa Kongo-Central Kwango Kwilu Lomami Lualaba Mai-Ndombe Maniema Mongala Nord-Kivu Nord-Ubangi Sankuru Sud-Kivu Sud-Ubangi Tanganyika Tshopo Tshuapa For more information on the methodology and data sources used during the production of this data, click here . Dataset citation Center for Integrated Earth System Information (CIESIN), Columbia University, Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, and GRID3. 2025. GRID3 COD - Health Facilities v8.0. New York: Columbia University. https://doi.org/10.7916/f1ft-y872. Accessed . Contacts and data queries The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "description": "The current version supersedes the GRID3 COD - Health Facilities v7.0. The following changes were made:\n- Added data for the provinces of Bas-Uele, Haut-Uele, Kwango, and Nord-Kivu\n- The data for Tanganyika was updated\nDownload province level data:\n- Bas-Uele\n- Equateur\n- Haut-Katanga\n- Haut-Lomami\n- Haut-Uele\n- Ituri\n- Kasa\u00ef\n- Kasa\u00ef-Central\n- Kasa\u00ef-Oriental\n- Kinshasa\n- Kongo-Central\n- Kwango\n- Kwilu\n- Lomami\n- Lualaba\n- Mai-Ndombe\n- Maniema\n- Mongala\n- Nord-Kivu\n- Nord-Ubangi\n- Sankuru\n- Sud-Kivu\n- Sud-Ubangi\n- Tanganyika\n- Tshopo\n- Tshuapa\nFor more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University, Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, and GRID3. 2025. GRID3 COD - Health Facilities v8.0. New York: Columbia University. https://doi.org/10.7916/f1ft-y872. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Health Facilities v8.0 dataset consists of health facility points with name, location, health zone, and health area, among other attributes, for all the twenty-six provinces in the Democratic Republic of the Congo (COD).",
     "keywords": [
       "COD",
@@ -52,20 +51,22 @@
       "health facilities",
       "latest"
     ],
-    "license": "other",
-    "providers": [
-      {
-        "name": "Center for Integrated Earth System Information (CIESIN)",
-        "roles": [
-          "producer"
-        ],
-        "url": "mailto:info@ciesin.columbia.edu"
-      }
+    "iso:topic_categories": [
+      "003",
+      "009",
+      "016"
     ],
-    "esri:scale_min": "150000000",
-    "esri:scale_max": "5000",
-    "esri:environment": "Esri ArcGIS 13.5.0.57366",
-    "esri:feature_count": "38049"
+    "language": "eng",
+    "metadata_scope": "dataset",
+    "esri:scale_min": 150000000,
+    "esri:scale_max": 5000,
+    "esri:crs_name": "GCS_WGS_1984",
+    "esri:item_name": "COD_GRID3_health_facilities_v8_0",
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "esri:distribution_format": "File Geodatabase Feature Class",
+    "esri:feature_type": "Feature Class",
+    "proj:code": "EPSG:4326"
   },
   "links": [
     {
@@ -88,13 +89,250 @@
     }
   ],
   "assets": {
-    "data_1": {
-      "href": "https://doi.org/10.7916/f1ft-y872.",
+    "GRID3 COD - Health Facilities v8.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/f1ft-y872",
+      "type": "text/html",
+      "title": "Download GRID3 COD - Health Facilities v8.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 COD - Health Facilities v8.0 Data Release Notes.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/kcrg-gs96/download",
+      "type": "application/pdf",
+      "title": "GRID3 COD - Health Facilities v8.0 Data Release Notes.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "GRID3_COD_health_facilities_v8_0.gdb.zip": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/2j7e-at59/download",
+      "type": "application/zip",
+      "title": "GRID3_COD_health_facilities_v8_0.gdb.zip",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Sankuru_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/s01m-7p10/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Sankuru_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Bas-Uele_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/gyvq-tw44/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Bas-Uele_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai\u0308-Central_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/chz4-yv63/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai\u0308-Central_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kinshasa_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/xsqy-9w09/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kinshasa_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Equateur_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/apr9-3k31/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Equateur_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Haut-Lomami_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/tjtt-vf14/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Haut-Lomami_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai\u0308-Oriental_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/y2qg-b261/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai\u0308-Oriental_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kongo-Central_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/yc1m-1466/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kongo-Central_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Haut-Katanga_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/s5e2-7f67/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Haut-Katanga_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Haut-Uele_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/n599-zs88/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Haut-Uele_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kwango_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/74wx-pc69/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kwango_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai\u0308_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/rywy-2042/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai\u0308_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Ituri_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/jcmj-tx33/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Ituri_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Maniema_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/rqhx-n240/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Maniema_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Nord-Kivu_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/3jfs-q358/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Nord-Kivu_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Sud-Ubangi_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/ccq1-c173/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Sud-Ubangi_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Nord-Ubangi_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/9c0m-nb79/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Nord-Ubangi_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Sud-Kivu_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/vm43-9k67/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Sud-Kivu_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Mai-Ndombe_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/by9m-t679/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Mai-Ndombe_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Mongala_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/4kgt-1w35/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Mongala_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Lomami_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/7gms-4m27/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Lomami_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Lualaba_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/bygn-e980/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Lualaba_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kwilu_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/sk3f-7749/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kwilu_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Tanganyika_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/wq8t-c061/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Tanganyika_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Tshopo_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/9tdh-he32/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Tshopo_health_facilities_v8_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Tshuapa_health_facilities_v8_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/ms1x-g960/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Tshuapa_health_facilities_v8_0.gpkg",
       "roles": [
         "data"
       ]
     }
   },
   "collection": "grid3-health-facilities-v80",
-  "title": "GRID3 COD - Health Facilities v8.0"
+  "title": "GRID3 COD - Health Facilities v8.0",
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Center for Integrated Earth System Information (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
 }

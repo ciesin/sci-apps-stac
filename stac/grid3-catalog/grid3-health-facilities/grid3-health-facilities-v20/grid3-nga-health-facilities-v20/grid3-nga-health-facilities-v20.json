@@ -39,11 +39,10 @@
     13.865238999999802
   ],
   "properties": {
-    "title": "GRID3 NGA - Health Facilities v2.0",
     "datetime": "2024-11-13T00:00:00Z",
-    "created": "2024-11-08T13:45:29Z",
+    "created": "2024-11-13T00:00:00Z",
     "updated": null,
-    "description": "This current version supersedes the GRID3 NGA - Health Facilities dataset; the following changes were made: Change of data schema Update of data inputs to incorporate records from the Nigeria Health Facility Registry (HFR, 2024). Schema and data attributes\u2019 standardization based on national guidelines For more information on the methodology and data sources used during the production of this data, see the Data Release Notes . Dataset citation Center for Integrated Earth System Information (CIESIN), Columbia University 2024. GRID3 NGA - Health Facilities v2.0. New York: GRID3.  https://doi.org/10.7916/kv1n-0743. Accessed [DAY MONTH YEAR]. Contacts and data queries The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
+    "description": "This current version supersedes the GRID3 NGA - Health Facilities dataset; the following changes were made:\n-\nChange of data schema\n-\nUpdate of data inputs to incorporate records from the Nigeria Health Facility Registry (HFR, 2024).\n-\nSchema and data attributes\u2019 standardization based on national guidelines\nFor more information on the methodology and data sources used during the production of this data, see the\u00a0Data Release Notes.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University 2024. GRID3 NGA - Health Facilities v2.0. New York: GRID3.  https://doi.org/10.7916/kv1n-0743. Accessed [DAY MONTH YEAR].\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
     "purpose": "The GRID3 NGA - Health Facilities v2.0 dataset is a non-exhaustive, non-validated geographic representation of health facility points in Nigeria. The dataset incorporates recent updates from both the Nigeria Health Facility Registry (HFR) and GRID3. This dataset is considered operational.",
     "keywords": [
       "NGA",
@@ -52,18 +51,17 @@
       "health facilities",
       "v2"
     ],
-    "license": "other",
-    "providers": [
-      {
-        "name": "Center for Integrated Earth System Information (CIESIN)",
-        "roles": [
-          "producer"
-        ],
-        "url": "mailto:info@ciesin.columbia.edu"
-      }
+    "iso:topic_categories": [
+      "009",
+      "016",
+      "017"
     ],
-    "esri:scale_min": "150000000",
-    "esri:scale_max": "5000"
+    "language": "eng",
+    "esri:scale_min": 150000000,
+    "esri:scale_max": 5000,
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "proj:code": "EPSG:4326"
   },
   "links": [
     {
@@ -86,13 +84,42 @@
     }
   ],
   "assets": {
-    "data_1": {
-      "href": "https://doi.org/10.7916/kv1n-0743.",
+    "GRID3 NGA - Health Facilities v2.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/kv1n-0743",
+      "type": "text/html",
+      "title": "Download GRID3 NGA - Health Facilities v2.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 NGA - Health Facilities v2.0 - Data Release Notes.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/tksj-6s23/download",
+      "type": "application/pdf",
+      "title": "GRID3 NGA - Health Facilities v2.0 - Data Release Notes.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "NGA_health_facilities_v2_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/bws3-8q75/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "NGA_health_facilities_v2_0.gpkg",
       "roles": [
         "data"
       ]
     }
   },
   "collection": "grid3-health-facilities-v20",
-  "title": "GRID3 NGA - Health Facilities v2.0"
+  "title": "GRID3 NGA - Health Facilities v2.0",
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Center for Integrated Earth System Information (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
 }

@@ -39,11 +39,10 @@
     -2.586635
   ],
   "properties": {
-    "title": "GRID3 COD - Schools v1.0",
     "datetime": "2024-05-10T00:00:00Z",
-    "created": "2023-09-08T14:20:10Z",
+    "created": "2024-05-10T00:00:00Z",
     "updated": "2023-10-05T10:11:12Z",
-    "description": "The data are available for download in OGC geopackage format packaged in a zip file . This data release supersedes the dataset \" GRID3 COD - Schools : five provinces v1.0 \". This operational dataset has not been fully validated by government officials or ministries. Download province level data: Haut-Katanga Kasa\u00ef Kasa\u00ef-Oriental Kinshasa Lomami For more information on the methodology and data sources used during the production of this data, see the Data Release Notes. Dataset citation: Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Schools v1.0. New York: GRID3. https://doi.org/10.7916/5ngz-fr94. Accessed . Contacts and data queries: The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "description": "The data are available for download in OGC geopackage format packaged in a\u00a0zip file.This data release supersedes the dataset \"GRID3 COD - Schools : five provinces v1.0\".\nThis operational dataset has not been fully validated by government officials or ministries.Download province level data:\n- Haut-Katanga\n- Kasa\u00ef\n- Kasa\u00ef-Oriental\n- Kinshasa\n- Lomami\nFor more information on the methodology and data sources used during the production of this data, see the Data Release Notes.Dataset citation:Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Schools v1.0. New York: GRID3. https://doi.org/10.7916/5ngz-fr94. Accessed <DAY MONTH YEAR>.Contacts and data queries:The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Schools v1.0 dataset consists of school spatial data points with names and attributes in the following provinces of the Democratic Republic of the Congo (COD): Haut-Katanga, Kasa\u00ef, Kasa\u00ef-Oriental, Kinshasa, and Lomami.",
     "keywords": [
       "COD",
@@ -51,20 +50,22 @@
       "POI",
       "Schools"
     ],
-    "license": "other",
-    "providers": [
-      {
-        "name": "Center for International Earth Science Information Network (CIESIN)",
-        "roles": [
-          "producer"
-        ],
-        "url": "mailto:info@ciesin.columbia.edu"
-      }
+    "iso:topic_categories": [
+      "003",
+      "009",
+      "016"
     ],
-    "esri:scale_min": "150000000",
-    "esri:scale_max": "5000",
-    "esri:environment": "Esri ArcGIS 13.1.0.41833",
-    "esri:feature_count": "11570"
+    "language": "eng",
+    "metadata_scope": "dataset",
+    "esri:scale_min": 150000000,
+    "esri:scale_max": 5000,
+    "esri:crs_name": "GCS_WGS_1984",
+    "esri:item_name": "GRID3_COD_schools_v2_0",
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "esri:distribution_format": "File Geodatabase Feature Class",
+    "esri:feature_type": "Feature Class",
+    "proj:code": "EPSG:4326"
   },
   "links": [
     {
@@ -87,13 +88,82 @@
     }
   ],
   "assets": {
-    "data_1": {
-      "href": "https://doi.org/10.7916/5ngz-fr94.",
+    "GRID3 COD - Schools v1.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/5ngz-fr94",
+      "type": "text/html",
+      "title": "Download GRID3 COD - Schools v1.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 COD - Schools v1.0 Data Release Notes.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/fej4-yq27/download",
+      "type": "application/pdf",
+      "title": "GRID3 COD - Schools v1.0 Data Release Notes.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "GRID3_COD_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/516q-tz36/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_schools_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Lomami_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/7n43-jn29/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Lomami_schools_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai_Oriental_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/agjt-6128/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai_Oriental_schools_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Haut-Katanga_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/40x2-1x17/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Haut-Katanga_schools_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kinshasa_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/qfmw-yq60/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kinshasa_schools_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai_schools_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/g3q5-c002/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai_schools_v1_0.gpkg",
       "roles": [
         "data"
       ]
     }
   },
   "collection": "grid3-schools-v10",
-  "title": "GRID3 COD - Schools v1.0"
+  "title": "GRID3 COD - Schools v1.0",
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
 }

@@ -39,11 +39,10 @@
     -2.583156666999965
   ],
   "properties": {
-    "title": "GRID3 COD - Religious Centers v1.0",
     "datetime": "2024-05-10T00:00:00Z",
-    "created": null,
+    "created": "2024-05-10T00:00:00Z",
     "updated": null,
-    "description": "The data are available for download in OGC Geopackage format contained in a zip file . This data release supersedes the dataset \u201c GRID3 COD - Religious Centers: five provinces v1.0 \u201d. This operational dataset has not been fully validated by government officials or ministries. Download province level data: Haut-Katanga Kasa\u00ef Kasa\u00ef-Oriental Kinshasa Lomami For more information on the methodology and data sources used during the production of this data, see the Data Release Notes . Dataset citation: Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Religious Centers v1.0. New York: GRID3. https://doi.org/10.7916/hesc-8041. Accessed . Contacts and data queries: The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
+    "description": "The data are available for download in OGC Geopackage format contained in a\u00a0zip file.\nThis data release supersedes the dataset \u201cGRID3 COD - Religious Centers: five provinces v1.0\u201d.\nThis operational dataset has not been fully validated by government officials or ministries.\nDownload province level data:\n- Haut-Katanga\n- Kasa\u00ef\n- Kasa\u00ef-Oriental\n- Kinshasa\n- Lomami\nFor more information on the methodology and data sources used during the production of this data, see the Data Release Notes.\nDataset citation:Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Religious Centers v1.0. New York: GRID3. https://doi.org/10.7916/hesc-8041. Accessed <DAY MONTH YEAR>.\nContacts and data queries:The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Religious Centers v1.0 dataset consists of spatial data points of religious centers with names and other attributes in the following provinces of the Democratic Republic of the Congo (COD): Haut-Katanga, Kasa\u00ef, Kasa\u00ef-Oriental, Kinshasa,\u00a0and\u00a0Lomami.",
     "keywords": [
       "COD",
@@ -52,16 +51,13 @@
       "Religious Centers",
       "Religious centers"
     ],
-    "license": "other",
-    "providers": [
-      {
-        "name": "Center for International Earth Science Information Network (CIESIN)",
-        "roles": [
-          "producer"
-        ],
-        "url": "mailto:info@ciesin.columbia.edu"
-      }
-    ]
+    "iso:topic_categories": [
+      "016",
+      "017"
+    ],
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "proj:code": "EPSG:4326"
   },
   "links": [
     {
@@ -84,13 +80,82 @@
     }
   ],
   "assets": {
-    "data_1": {
-      "href": "https://doi.org/10.7916/hesc-8041.",
+    "GRID3 COD - Religious Centers v1.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/hesc-8041",
+      "type": "text/html",
+      "title": "Download GRID3 COD - Religious Centers v1.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "GRID3 COD - Religious Centers v1.0 Data Release Notes.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/a3gy-hy12/download",
+      "type": "application/pdf",
+      "title": "GRID3 COD - Religious Centers v1.0 Data Release Notes.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "GRID3_COD_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/2zcw-7327/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_religious_centers_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai_Oriental_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/zg2q-sg41/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai_Oriental_religious_centers_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Haut-Katanga_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/jyre-a256/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Haut-Katanga_religious_centers_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kinshasa_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/22g6-0z67/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kinshasa_religious_centers_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Lomami_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/fq1y-vn73/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Lomami_religious_centers_v1_0.gpkg",
+      "roles": [
+        "data"
+      ]
+    },
+    "GRID3_COD_Kasai_religious_centers_v1_0.gpkg": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/14e6-xp70/download",
+      "type": "application/geopackage+sqlite3",
+      "title": "GRID3_COD_Kasai_religious_centers_v1_0.gpkg",
       "roles": [
         "data"
       ]
     }
   },
   "collection": "grid3-religious-centers-10",
-  "title": "GRID3 COD - Religious Centers v1.0"
+  "title": "GRID3 COD - Religious Centers v1.0",
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
 }

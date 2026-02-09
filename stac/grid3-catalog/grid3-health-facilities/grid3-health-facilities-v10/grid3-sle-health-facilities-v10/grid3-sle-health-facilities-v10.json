@@ -1,0 +1,129 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "grid3-sle-health-facilities-v10",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -13.29207,
+          6.96792
+        ],
+        [
+          -10.30744,
+          6.96792
+        ],
+        [
+          -10.30744,
+          9.977068
+        ],
+        [
+          -13.29207,
+          9.977068
+        ],
+        [
+          -13.29207,
+          6.96792
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -13.29207,
+    6.96792,
+    -10.30744,
+    9.977068
+  ],
+  "properties": {
+    "datetime": "2023-05-09T09:47:08Z",
+    "created": "2023-05-09T09:47:08Z",
+    "updated": "2023-08-07T13:12:22Z",
+    "description": "The data is available in both spatial and tabular file formats.\nCoordinate system: GCS WGS 1984\nFor full methodological details, please see data release notes available for download here.Download the data as a zip file.\nCopyright\n2023.  Sierra Leone Ministry of Health and Sanitation (MoHS) and\nTrustees of Columbia University in the City of New York.\nDataset citation:\nSierra Leone Ministry of Health and Sanitation (MoHS) and Center for International Earth Science Information Network (CIESIN), Columbia University. 2023. Sierra Leone National Health Facilities Dataset Version 01. Palisades, NY: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/ag19-s334. Accessed DAY MONTH YEAR",
+    "purpose": "The dataset consists of health facility points with name, location (where available), facility type, functionality, and ownership in Sierra Leone",
+    "keywords": [
+      "Health Facilities",
+      "SLE",
+      "Sierra Leone",
+      "health facilities"
+    ],
+    "iso:topic_categories": [
+      "009",
+      "013",
+      "017"
+    ],
+    "language": "eng",
+    "metadata_scope": "dataset",
+    "esri:scale_min": 150000000,
+    "esri:scale_max": 5000,
+    "esri:crs_name": "GCS_WGS_1984",
+    "esri:item_name": "SLE_National_MHFL_V01",
+    "esri:arcgis_format": "1.0",
+    "esri:metadata_profile": "ISO19139",
+    "esri:distribution_format": "Shapefile",
+    "esri:feature_type": "Feature Class",
+    "proj:code": "EPSG:4326"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "CIESIN STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v1.0"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GRID3 Health Facilities v1.0"
+    }
+  ],
+  "assets": {
+    "GRID3 SLE - Health Facilities v1.0 DOI Data Download": {
+      "href": "https://doi.org/10.7916/ag19-s334",
+      "type": "text/html",
+      "title": "Download GRID3 SLE - Health Facilities v1.0 dataset via DOI landing page",
+      "roles": [
+        "documentation",
+        "data"
+      ]
+    },
+    "Data Release Notes Sierra Leone National Health Facilities Version 01.pdf": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/514p-gz80/download",
+      "type": "application/pdf",
+      "title": "Data Release Notes Sierra Leone National Health Facilities Version 01.pdf",
+      "roles": [
+        "documentation"
+      ]
+    },
+    "SLE_NationalHealthFacilites_v01.zip": {
+      "href": "https://academiccommons.columbia.edu/doi/10.7916/fhg4-qa91/download",
+      "type": "application/zip",
+      "title": "SLE_NationalHealthFacilites_v01.zip",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grid3-health-facilities-v10",
+  "title": "GRID3 SLE - Health Facilities v1.0",
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer"
+      ],
+      "url": "mailto:info@ciesin.columbia.edu"
+    }
+  ]
+}

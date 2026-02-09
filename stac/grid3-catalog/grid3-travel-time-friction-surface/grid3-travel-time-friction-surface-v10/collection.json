@@ -11,6 +11,11 @@
       "title": "CIESIN STAC"
     },
     {
+      "rel": "item",
+      "href": "./grid3-nga-travel-time-friction-surface-v10/grid3-nga-travel-time-friction-surface-v10.json",
+      "type": "application/geo+json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -22,18 +27,18 @@
     "spatial": {
       "bbox": [
         [
-          Infinity,
-          Infinity,
-          -Infinity,
-          -Infinity
+          2.505143,
+          4.2442,
+          14.8327,
+          13.967903
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          null,
-          null
+          "2025-09-18T10:32:58Z",
+          "2025-09-18T10:32:58Z"
         ]
       ]
     }
