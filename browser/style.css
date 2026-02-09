@@ -1,0 +1,159 @@
+/* =========================
+   Base layout
+   ========================= */
+
+:root {
+  --columbia-navy: #1f3a5f;
+  --columbia-blue: #9bddf5;
+  --columbia-light: #e6f4fb;
+  --text-main: #2c3e50;
+  --text-muted: #6b7280;
+  --border-light: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-main);
+  background: #ffffff;
+  line-height: 1.55;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+  background: var(--columbia-navy);
+  color: white;
+  padding: 20px 24px;
+  border-bottom: 4px solid var(--columbia-blue);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+header p {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   Main content
+   ========================= */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
+}
+
+/* =========================
+   Collections
+   ========================= */
+
+section {
+  margin-bottom: 48px;
+}
+
+section > h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: var(--columbia-navy);
+}
+
+section > p {
+  margin-top: 0;
+  max-width: 800px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Items / datasets
+   ========================= */
+
+.item {
+  margin-top: 20px;
+  padding: 18px 20px;
+  background: var(--columbia-light);
+  border-left: 5px solid var(--columbia-blue);
+  border-radius: 4px;
+}
+
+.item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: var(--columbia-navy);
+}
+
+.item .description {
+  margin: 8px 0 12px;
+  white-space: pre-line; /* preserves newlines from STAC abstracts */
+}
+
+/* =========================
+   Asset links
+   ========================= */
+
+.assets {
+  padding-left: 0;
+  margin: 12px 0 0;
+}
+
+.assets li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.assets a {
+  color: var(--columbia-navy);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.assets a:hover {
+  text-decoration: underline;
+  color: #16304d;
+}
+
+/* =========================
+   Utility elements
+   ========================= */
+
+.loading {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* =========================
+   Responsive tweaks
+   ========================= */
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px 16px 40px;
+  }
+
+  header h1 {
+    font-size: 1.35rem;
+  }
+
+  .item {
+    padding: 16px;
+  }
+}
