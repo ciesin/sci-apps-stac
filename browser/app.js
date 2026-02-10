@@ -6,21 +6,24 @@ async function fetchJSON(url) {
   return res.json();
 }
 
-async function loadCatalog() {
-  const catalogUrl = new URL(CATALOG_URL, window.location.href);
-  const catalog = await fetchJSON(catalogUrl);
+async function loadNode(url, container) {
+  const nodeUrl = new URL(url, window.location.href);
+  const node = await fetchJSON(nodeUrl);
 
-  const content = document.getElementById("content");
-  content.innerHTML = "";
+  // COLLECTION
+  if (node.type === "Collection" || node.extent) {
+    await loadCollection(node, nodeUrl, container);
+    return;
+  }
 
-  const collections = catalog.links.filter(l => l.rel === "child");
+  // CATALOG
+  const children = node.links.filter(l => l.rel === "child");
 
-  for (const link of collections) {
-    const collectionUrl = new URL(link.href, catalogUrl);
-    const collection = await fetchJSON(collectionUrl);
-    await loadCollection(collection, collectionUrl, content);
+  for (const link of children) {
+    await loadNode(new URL(link.href, nodeUrl), container);
   }
 }
+
 
 async function loadCollection(collection, collectionUrl, container) {
   const section = document.createElement("section");
@@ -39,12 +42,16 @@ async function loadCollection(collection, collectionUrl, container) {
   }
 }
 
+
 function renderItem(item, container) {
   const div = document.createElement("div");
   div.className = "item";
 
   const assets = Object.values(item.assets || {})
-    .map(a => `<li><a href="${a.href}" target="_blank">${a.title || "Asset"}</a></li>`)
+    .map(a => {
+      const href = new URL(a.href, container.baseURI).href;
+      return `<li><a href="${href}" target="_blank">${a.title || a.type || "Asset"}</a></li>`;
+    })
     .join("");
 
   div.innerHTML = `
@@ -56,6 +63,8 @@ function renderItem(item, container) {
   container.appendChild(div);
 }
 
-loadCatalog().catch(err => {
-  document.getElementById("content").innerText = err.message;
+const content = document.getElementById("content");
+
+loadNode(CATALOG_URL, content).catch(err => {
+  content.innerText = err.message;
 });
