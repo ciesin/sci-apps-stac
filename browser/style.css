@@ -24,6 +24,10 @@ body {
   line-height: 1.55;
 }
 
+.content {
+  padding: 1em;
+}
+
 /* =========================
    Header
    ========================= */
@@ -290,3 +294,144 @@ section > p {
   font-weight: 600;
 }
 
+/* ---------- collection metadata ---------- */
+.node-metadata {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.4rem 0 0.8rem 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid #e0e0e0;
+}
+
+.node-description p {
+  margin: 0.3rem 0;
+}
+
+.node-metadata ul {
+  margin: 0.3rem 0 0.6rem 1.2rem;
+  padding-left: 0.8rem;
+}
+
+.node-metadata li {
+  margin: 0.2rem 0;
+}
+
+.keywords {
+  margin-top: 0.3rem;
+}
+
+.keyword {
+  display: inline-block;
+  background: #eef3f7;
+  color: #37474f;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin: 2px 4px 2px 0;
+  font-size: 0.75rem;
+}
+
+
+
+/* =========================
+   Item two-column layout
+   ========================= */
+
+.item {
+  padding-right: 1.5rem;
+}
+
+/* Grid container */
+.item-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+/* Columns */
+.item-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.item-left {}
+.item-right {}
+
+/* =========================
+   Item blocks
+   ========================= */
+
+.item-block {
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 0.75rem 0.9rem;
+  background: #ffffff;
+}
+
+.item-block h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+/* =========================
+   Assets
+   ========================= */
+
+.asset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.asset {
+  margin-bottom: 0.75rem;
+}
+
+.asset-title a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--columbia-navy);
+  text-decoration: none;
+}
+
+.asset-title a:hover {
+  text-decoration: underline;
+}
+
+.asset-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.asset img {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.4rem;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+/* =========================
+   Fix layout conflicts
+   ========================= */
+
+/* Prevent grid from being offset by old rule */
+.item > div {
+  margin-left: 0;
+}
+
+/* =========================
+   Responsive behavior
+   ========================= */
+
+@media (max-width: 900px) {
+  .item-layout {
+    grid-template-columns: 1fr;
+  }
+}

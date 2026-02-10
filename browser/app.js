@@ -34,32 +34,41 @@ async function loadNode(url, container) {
   }
 
   // CATALOG
+  
   const catalogDiv = document.createElement("div");
   catalogDiv.className = "node catalog level-catalog";
-
 
   const header = document.createElement("h1");
   header.textContent = node.title || node.id;
   header.className = "node-header catalog-header";
 
-
   const body = document.createElement("div");
-  body.style.display = "none";
+
+  // metadata (shown when catalog is open)
+  const metadata = renderMetadata(node);
+  body.appendChild(metadata);
+
+
+  // open root + second level catalogs
+  const shouldOpen = depth <= 1;
+  body.style.display = shouldOpen ? "block" : "none";
+  header.classList.toggle("open", shouldOpen);
 
   header.addEventListener("click", () => {
     const open = body.style.display === "none";
-    toggle(body, open);
+    body.style.display = open ? "block" : "none";
     header.classList.toggle("open", open);
-
   });
 
   catalogDiv.appendChild(header);
   catalogDiv.appendChild(body);
   container.appendChild(catalogDiv);
 
+  // recurse into children
   for (const link of node.links.filter(l => l.rel === "child")) {
-    await loadNode(new URL(link.href, nodeUrl), body);
+    await loadNode(new URL(link.href, nodeUrl), body, depth + 1);
   }
+
 }
 
 /* ---------------- Collections ---------------- */
@@ -76,6 +85,11 @@ function renderCollection(collection, collectionUrl, container) {
 
 
   const body = document.createElement("div");
+
+  // collection metadata
+  const metadata = renderMetadata(collection);
+  body.appendChild(metadata);
+
   body.style.display = "none";
 
   header.addEventListener("click", async () => {
@@ -101,14 +115,88 @@ function renderCollection(collection, collectionUrl, container) {
   container.appendChild(section);
 }
 
-/* ---------------- Items ---------------- */
+/* ---------------- Metadata for catalogs ---------------- */
+function renderMetadata(node) {
+  const meta = document.createElement("div");
+  meta.className = "node-metadata";
 
+  // Description
+  if (node.description) {
+    const desc = document.createElement("div");
+    desc.className = "node-description";
+    desc.innerHTML = renderMarkdown(node.description);
+    meta.appendChild(desc);
+  }
+
+  // Providers
+  if (node.providers?.length) {
+    const prov = document.createElement("div");
+    prov.innerHTML = `
+      <strong>Providers</strong>
+      <ul>
+        ${node.providers
+          .map(
+            p =>
+              `<li>
+                ${p.url ? `<a href="${p.url}" target="_blank">${p.name}</a>` : p.name}
+                ${p.roles?.length ? ` (${p.roles.join(", ")})` : ""}
+              </li>`
+          )
+          .join("")}
+      </ul>
+    `;
+    meta.appendChild(prov);
+  }
+
+  // Keywords
+  if (node.keywords?.length) {
+    const kw = document.createElement("div");
+    kw.innerHTML = `
+      <strong>Keywords</strong>
+      <div class="keywords">
+        ${node.keywords.map(k => `<span class="keyword">${k}</span>`).join("")}
+      </div>
+    `;
+    meta.appendChild(kw);
+  }
+
+  // Helpful links (exclude structural STAC links)
+  const usefulLinks = (node.links || []).filter(
+    l => !["self", "root", "parent", "child", "item"].includes(l.rel)
+  );
+
+  if (usefulLinks.length) {
+    const links = document.createElement("div");
+    links.innerHTML = `
+      <strong>Links</strong>
+      <ul>
+        ${usefulLinks
+          .map(
+            l =>
+              `<li>
+                <a href="${l.href}" target="_blank">
+                  ${l.title || l.rel}
+                </a>
+              </li>`
+          )
+          .join("")}
+      </ul>
+    `;
+    meta.appendChild(links);
+  }
+
+  return meta;
+}
+
+
+/* ---------------- Items ---------------- */
 function renderItem(item, container) {
   const itemDiv = document.createElement("div");
   itemDiv.className = "node item level-item";
-
   itemDiv.dataset.search =
-  `${item.title || ""} ${item.id || ""} ${item.properties?.description || ""}`.toLowerCase();
+    `${item.title || ""} ${item.id || ""} ${item.properties?.description || ""}`.toLowerCase();
+
+  /* ---------- Header ---------- */
 
   const header = document.createElement("h3");
   header.textContent = item.title || item.id;
@@ -119,81 +207,138 @@ function renderItem(item, container) {
 
   header.addEventListener("click", () => {
     const open = body.style.display === "none";
-    toggle(body, open);
+    body.style.display = open ? "block" : "none";
     header.classList.toggle("open", open);
 
-    // fix Leaflet rendering
+    // initialize / fix map when opened
     if (open && body._initMap) {
       body._initMap();
     }
-
+    if (open && body._leafletMap) {
+      setTimeout(() => body._leafletMap.invalidateSize(), 0);
+    }
   });
 
+  /* ---------- Layout ---------- */
 
-  // description
-  if (item.properties?.description) {
-    const desc = document.createElement("div");
-    desc.className = "item-description";
-    desc.innerHTML = renderMarkdown(item.properties.description);
-    body.appendChild(desc);
-  }
+  const layout = document.createElement("div");
+  layout.className = "item-layout";
 
+  const leftCol = document.createElement("div");
+  leftCol.className = "item-col item-left";
 
-  // map preview
+  const rightCol = document.createElement("div");
+  rightCol.className = "item-col item-right";
+
+  layout.appendChild(leftCol);
+  layout.appendChild(rightCol);
+  body.appendChild(layout);
+
+  /* ---------- LEFT COLUMN ---------- */
+  /* ---- Map ---- */
+
   if (item.bbox || item.geometry) {
+    const mapBlock = document.createElement("div");
+    mapBlock.className = "item-block";
+    mapBlock.innerHTML = `<h4>Spatial Extent</h4>`;
+
     const mapDiv = document.createElement("div");
     mapDiv.className = "item-map";
-
-    body.appendChild(mapDiv);
+    mapBlock.appendChild(mapDiv);
+    leftCol.appendChild(mapBlock);
 
     body._initMap = () => {
       if (!body._leafletMap) {
-          body._leafletMap = renderMap(item, mapDiv);
-        }
+        body._leafletMap = renderMap(item, mapDiv);
+      }
     };
-
   }
 
-  // assets
-  const ul = document.createElement("ul");
+  /* ---- Assets ---- */
 
-  for (const asset of Object.values(item.assets || {})) {
-    const li = document.createElement("li");
-    const href = new URL(asset.href, container.baseURI).href;
+  if (item.assets && Object.keys(item.assets).length) {
+    const assetsBlock = document.createElement("div");
+    assetsBlock.className = "item-block";
+    assetsBlock.innerHTML = `<h4>Assets</h4>`;
 
-    // image preview
-    if (asset.type?.startsWith("image/")) {
+    const ul = document.createElement("ul");
+    ul.className = "asset-list";
+
+    for (const [key, asset] of Object.entries(item.assets)) {
+      const li = document.createElement("li");
+      li.className = "asset";
+
+      const href = new URL(asset.href, container.baseURI).href;
+
       li.innerHTML = `
-        <a href="${href}" target="_blank">${asset.title || "Image"}</a><br>
-        <img src="${href}" style="max-width:200px;margin-top:5px"/>
+        <div class="asset-title">
+          <a href="${href}" target="_blank">${asset.title || key}</a>
+        </div>
+        <div class="asset-meta">
+          ${asset.type ? `<div><strong>Type:</strong> ${asset.type}</div>` : ""}
+          ${asset.roles?.length ? `<div><strong>Roles:</strong> ${asset.roles.join(", ")}</div>` : ""}
+        </div>
       `;
-    } else {
-      li.innerHTML = `<a href="${href}" target="_blank">${asset.title || asset.type || "Asset"}</a>`;
+
+      if (asset.type?.startsWith("image/")) {
+        const img = document.createElement("img");
+        img.src = href;
+        img.alt = asset.title || key;
+        li.appendChild(img);
+      }
+
+      ul.appendChild(li);
     }
 
-    ul.appendChild(li);
+    assetsBlock.appendChild(ul);
+    leftCol.appendChild(assetsBlock);
   }
 
-  function renderMarkdown(text) {
-    if (!text) return "";
+  /* ---------- RIGHT COLUMN ---------- */
+  /* ---- Description ---- */
 
-    return text
-      .replace(/^### (.*$)/gim, "<h4>$1</h4>")
-      .replace(/^## (.*$)/gim, "<h3>$1</h3>")
-      .replace(/^# (.*$)/gim, "<h2>$1</h2>")
-      .replace(/^\s*-\s+(.*)/gim, "<li>$1</li>")
-      .replace(/(<li>.*<\/li>)/gims, "<ul>$1</ul>")
-      .replace(/\n{2,}/g, "</p><p>")
-      .replace(/\n/g, "<br>")
-      .replace(/^(.*)$/gim, "<p>$1</p>");
+  if (item.properties?.description) {
+    const descBlock = document.createElement("div");
+    descBlock.className = "item-block";
+    descBlock.innerHTML = `
+      <h4>Description</h4>
+      <div class="item-description">
+        ${renderMarkdown(item.properties.description)}
+      </div>
+    `;
+    rightCol.appendChild(descBlock);
   }
 
+  /* ---- Item metadata ---- */
 
-  body.appendChild(ul);
+  const infoBlock = document.createElement("div");
+  infoBlock.className = "item-block";
+  infoBlock.innerHTML = `<h4>Item Information</h4>`;
+
+  const infoList = document.createElement("ul");
+
+  if (item.id) {
+    infoList.innerHTML += `<li><strong>ID:</strong> ${item.id}</li>`;
+  }
+
+  if (item.datetime) {
+    infoList.innerHTML += `<li><strong>Date:</strong> ${item.datetime}</li>`;
+  }
+
+  if (item.bbox) {
+    infoList.innerHTML += `<li><strong>BBox:</strong> ${item.bbox.join(", ")}</li>`;
+  }
+
+  infoBlock.appendChild(infoList);
+  rightCol.appendChild(infoBlock);
+
+  /* ---------- Assemble ---------- */
+
   itemDiv.appendChild(header);
   itemDiv.appendChild(body);
   container.appendChild(itemDiv);
 }
+
 
 /* ---------------- Map ---------------- */
 
