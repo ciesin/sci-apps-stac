@@ -4,15 +4,21 @@
   <meta charset="UTF-8" />
   <title>GRID3 Data Catalog</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 <body>
   <header>
     <h1>GRID3 Data Catalog</h1>
     <p>Browse and download spatial datasets</p>
-  </header>
 
-  <main id="content">
-    <p>Loading catalog…</p>
+  </header>
+  <input id="search" placeholder="Search collections or items…" />
+  <div id="content"></div>
+ 
   </main>
 
   <script src="app.js"></script>
