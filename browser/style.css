@@ -157,3 +157,25 @@ section > p {
     padding: 16px;
   }
 }
+
+
+
+/* --- dropdown --- */
+
+.collection-header,
+.item-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.collection-header::before {
+  content: "▶ ";
+}
+
+.collection-header.open::before {
+  content: "▼ ";
+}
+
+.item-header::before {
+  content: "▸ ";
+}
