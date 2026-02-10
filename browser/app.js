@@ -116,7 +116,8 @@ loadNode(CATALOG_URL, content).catch(err => {
 
 /* ---------------- Recursive Loader ---------------- */
 
-async function loadNode(url, container) {
+async function loadNode(url, container, depth = 0) {
+
   const nodeUrl = new URL(url, window.location.href);
   const node = await fetchJSON(nodeUrl);
 
