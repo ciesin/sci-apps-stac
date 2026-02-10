@@ -161,21 +161,89 @@ section > p {
 
 
 /* --- dropdown --- */
+/* ---------- Base ---------- */
 
-.collection-header,
-.item-header {
+.node {
+  position: relative;
+  margin-left: 1.2rem;
+  padding-left: 1rem;
+  border-left: 1px solid #e0e0e0;
+}
+
+.node-header {
   cursor: pointer;
   user-select: none;
+  font-weight: 600;
+  margin: 0.4rem 0;
 }
 
-.collection-header::before {
-  content: "▶ ";
+/* ---------- Levels ---------- */
+
+.level-catalog {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
 }
 
-.collection-header.open::before {
-  content: "▼ ";
+.catalog-header {
+  font-size: 1.4rem;
+  color: #1b5e20;
 }
 
-.item-header::before {
-  content: "▸ ";
+.level-collection {
+  margin-left: 1.5rem;
+}
+
+.collection-header {
+  font-size: 1.1rem;
+  color: #2e7d32;
+}
+
+.level-item {
+  margin-left: 1.5rem;
+}
+
+.item-header {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #37474f;
+}
+
+/* ---------- Disclosure arrows ---------- */
+
+.node-header::before {
+  content: "▸";
+  display: inline-block;
+  width: 1rem;
+  color: #666;
+}
+
+.node-header.open::before {
+  content: "▾";
+}
+
+/* ---------- Item body ---------- */
+
+.item > div {
+  margin-left: 1rem;
+}
+
+/* ---------- Assets ---------- */
+
+.item ul {
+  margin: 0.4rem 0 0.6rem 1rem;
+  padding-left: 0.5rem;
+}
+
+.item li {
+  font-size: 0.85rem;
+}
+
+/* ---------- Search ---------- */
+
+#search {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }

@@ -35,11 +35,13 @@ async function loadNode(url, container) {
 
   // CATALOG
   const catalogDiv = document.createElement("div");
-  catalogDiv.className = "catalog";
+  catalogDiv.className = "node catalog level-catalog";
+
 
   const header = document.createElement("h1");
   header.textContent = node.title || node.id;
-  header.className = "catalog-header";
+  header.className = "node-header catalog-header";
+
 
   const body = document.createElement("div");
   body.style.display = "none";
@@ -47,6 +49,8 @@ async function loadNode(url, container) {
   header.addEventListener("click", () => {
     const open = body.style.display === "none";
     toggle(body, open);
+    header.classList.toggle("open", open);
+
   });
 
   catalogDiv.appendChild(header);
@@ -62,12 +66,14 @@ async function loadNode(url, container) {
 
 function renderCollection(collection, collectionUrl, container) {
   const section = document.createElement("section");
-  section.className = "collection";
+  section.className = "node collection level-collection";
+
   section.dataset.search = (collection.title || collection.id).toLowerCase();
 
   const header = document.createElement("h2");
   header.textContent = collection.title || collection.id;
-  header.className = "collection-header";
+  header.className = "node-header collection-header";
+
 
   const body = document.createElement("div");
   body.style.display = "none";
@@ -75,6 +81,8 @@ function renderCollection(collection, collectionUrl, container) {
   header.addEventListener("click", async () => {
     const open = body.style.display === "none";
     toggle(body, open);
+    header.classList.toggle("open", open);
+
 
     if (!body.dataset.loaded) {
       for (const link of collection.links.filter(l => l.rel === "item")) {
@@ -95,12 +103,13 @@ function renderCollection(collection, collectionUrl, container) {
 
 function renderItem(item, container) {
   const itemDiv = document.createElement("div");
-  itemDiv.className = "item";
+  itemDiv.className = "node item level-item";
+
   itemDiv.dataset.search = (item.title || item.id).toLowerCase();
 
   const header = document.createElement("h3");
   header.textContent = item.title || item.id;
-  header.className = "item-header";
+  header.className = "node-header item-header";
 
   const body = document.createElement("div");
   body.style.display = "none";
