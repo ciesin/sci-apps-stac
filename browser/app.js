@@ -68,7 +68,7 @@ function renderCollection(collection, collectionUrl, container) {
   const section = document.createElement("section");
   section.className = "node collection level-collection";
 
-  section.dataset.search = (collection.title || collection.id).toLowerCase();
+  section.dataset.search = `${collection.title || ""} ${collection.description || ""}`.toLowerCase();
 
   const header = document.createElement("h2");
   header.textContent = collection.title || collection.id;
@@ -92,6 +92,8 @@ function renderCollection(collection, collectionUrl, container) {
       }
       body.dataset.loaded = "true";
     }
+
+  
   });
 
   section.appendChild(header);
@@ -105,7 +107,8 @@ function renderItem(item, container) {
   const itemDiv = document.createElement("div");
   itemDiv.className = "node item level-item";
 
-  itemDiv.dataset.search = (item.title || item.id).toLowerCase();
+  itemDiv.dataset.search =
+  `${item.title || ""} ${item.id || ""} ${item.properties?.description || ""}`.toLowerCase();
 
   const header = document.createElement("h3");
   header.textContent = item.title || item.id;
@@ -115,8 +118,17 @@ function renderItem(item, container) {
   body.style.display = "none";
 
   header.addEventListener("click", () => {
-    toggle(body, body.style.display === "none");
+    const open = body.style.display === "none";
+    toggle(body, open);
+    header.classList.toggle("open", open);
+
+    // fix Leaflet rendering
+    if (open && body._initMap) {
+      body._initMap();
+    }
+
   });
+
 
   // description
   if (item.properties?.description) {
@@ -134,7 +146,12 @@ function renderItem(item, container) {
 
     body.appendChild(mapDiv);
 
-    setTimeout(() => renderMap(item, mapDiv), 0);
+    body._initMap = () => {
+      if (!body._leafletMap) {
+          body._leafletMap = renderMap(item, mapDiv);
+        }
+    };
+
   }
 
   // assets
@@ -181,7 +198,9 @@ function renderItem(item, container) {
 /* ---------------- Map ---------------- */
 
 function renderMap(item, div) {
-  const map = L.map(div).setView([0, 0], 2);
+  const map = L.map(div, {
+    zoomControl: false
+  }).setView([0, 0], 2);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap"
@@ -197,14 +216,41 @@ function renderMap(item, div) {
   }
 
   if (layer) map.fitBounds(layer.getBounds());
+
+  return map;
 }
+
 
 /* ---------------- Search ---------------- */
 
 searchInput?.addEventListener("input", e => {
-  const q = e.target.value.toLowerCase();
+  const q = e.target.value.toLowerCase().trim();
 
-  document.querySelectorAll("[data-search]").forEach(el => {
-    el.style.display = el.dataset.search.includes(q) ? "" : "none";
+  document.querySelectorAll(".node").forEach(node => {
+    const text = node.dataset.search || "";
+    const matches = text.includes(q);
+
+    node.style.display = q === "" || matches ? "" : "none";
+
+    // auto-expand matching nodes
+    const header = node.querySelector(".node-header");
+    const body = header?.nextElementSibling;
+
+    if (matches && body) {
+      body.style.display = "block";
+      header.classList.add("open");
+    }
+
+    // always show parents of visible nodes
+    if (node.style.display !== "none") {
+      let parent = node.parentElement;
+      while (parent && parent !== content) {
+        if (parent.classList.contains("node")) {
+          parent.style.display = "";
+        }
+        parent = parent.parentElement;
+      }
+    }
   });
 });
+
