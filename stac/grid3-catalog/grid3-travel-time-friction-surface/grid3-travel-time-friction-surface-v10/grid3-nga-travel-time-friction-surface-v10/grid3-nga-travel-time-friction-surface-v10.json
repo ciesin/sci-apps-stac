@@ -39,9 +39,6 @@
     13.967903
   ],
   "properties": {
-    "datetime": "2025-09-18T10:32:58Z",
-    "created": "2025-09-18T10:32:58Z",
-    "updated": "2025-10-03T11:44:57Z",
     "description": "The  GRID3 NGA - Travel Time Friction Surface v1.0 dataset is a spatial data layer in tiff format. The datasets contain 2 layers:\n-\nGRID3_NGA_walk_travel_time_friction_surface_v1_0.tif  - Applies walking speeds across the entire surface, adjusted for slope and elevation.\n-\nGRID3_NGA_mix_travel_time_friction_surface_v1_0.tif - Applies motorized speeds on roads and walking speeds in all other areas.\nThe resolution is 30 m. The unit of measurement in both surfaces is minutes per meter.\nDataset citation:\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2025. GRID3 NGA - Travel Time Friction Surface v1.0. New York: Columbia University. https://doi.org/10.7916/tw5k-ys98. Accessed <DAY MONTH YEAR>\nContacts and data queries:\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
     "purpose": "The aim of this work is to generate two friction surfaces for modeling physical accessibility: one incorporating walking speed only, and another combining walking and motorized travel speeds. Motorized speeds are applied exclusively on roads that are present and passable by vehicles; in all other areas, walking speeds are used.",
     "keywords": [
@@ -51,6 +48,9 @@
       "Travel time",
       "travel time"
     ],
+    "datetime": "2025-09-18T10:32:58Z",
+    "created": "2025-09-18T10:32:58Z",
+    "updated": "2025-10-03T11:44:57Z",
     "iso:topic_categories": [
       "016",
       "018"

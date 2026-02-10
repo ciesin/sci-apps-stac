@@ -39,9 +39,6 @@
     13.8842
   ],
   "properties": {
-    "datetime": "2025-08-15T14:42:41Z",
-    "created": "2025-08-15T14:42:41Z",
-    "updated": "2025-09-18T12:19:17Z",
     "description": "The  GRID3 NGA - Roads v1dataset is a spatial data layer in OGC Geopackage format. The metadata file is included in xml format.\nDataset citation:\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2025. GRID3 NGA - Roads v1.0.New York: Columbia University. https://doi.org/10.7916/b42r-6w17. Accessed <DAY MONTH YEAR>.\nContacts and data queries:\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences.\nFor dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
     "purpose": "The spatial dataset consists of road and path locations in Nigeria.",
     "keywords": [
@@ -50,6 +47,9 @@
       "Nigeria, NGA",
       "Roads"
     ],
+    "datetime": "2025-08-15T14:42:41Z",
+    "created": "2025-08-15T14:42:41Z",
+    "updated": "2025-09-18T12:19:17Z",
     "iso:topic_categories": [
       "016",
       "017",

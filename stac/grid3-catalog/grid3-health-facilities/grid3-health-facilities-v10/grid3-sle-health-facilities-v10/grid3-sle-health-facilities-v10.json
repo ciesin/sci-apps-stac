@@ -39,9 +39,6 @@
     9.977068
   ],
   "properties": {
-    "datetime": "2023-05-09T09:47:08Z",
-    "created": "2023-05-09T09:47:08Z",
-    "updated": "2023-08-07T13:12:22Z",
     "description": "The data is available in both spatial and tabular file formats.\nCoordinate system: GCS WGS 1984\nFor full methodological details, please see data release notes available for download here.Download the data as a zip file.\nCopyright\n2023.  Sierra Leone Ministry of Health and Sanitation (MoHS) and\nTrustees of Columbia University in the City of New York.\nDataset citation:\nSierra Leone Ministry of Health and Sanitation (MoHS) and Center for International Earth Science Information Network (CIESIN), Columbia University. 2023. Sierra Leone National Health Facilities Dataset Version 01. Palisades, NY: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/ag19-s334. Accessed DAY MONTH YEAR",
     "purpose": "The dataset consists of health facility points with name, location (where available), facility type, functionality, and ownership in Sierra Leone",
     "keywords": [
@@ -50,6 +47,9 @@
       "Sierra Leone",
       "health facilities"
     ],
+    "datetime": "2023-05-09T09:47:08Z",
+    "created": "2023-05-09T09:47:08Z",
+    "updated": "2023-08-07T13:12:22Z",
     "iso:topic_categories": [
       "009",
       "013",

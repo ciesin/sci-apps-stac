@@ -39,9 +39,6 @@
     -2.586635
   ],
   "properties": {
-    "datetime": "2024-05-10T00:00:00Z",
-    "created": "2024-05-10T00:00:00Z",
-    "updated": "2023-10-05T10:11:12Z",
     "description": "The data are available for download in OGC geopackage format packaged in a\u00a0zip file.This data release supersedes the dataset \"GRID3 COD - Schools : five provinces v1.0\".\nThis operational dataset has not been fully validated by government officials or ministries.Download province level data:\n- Haut-Katanga\n- Kasa\u00ef\n- Kasa\u00ef-Oriental\n- Kinshasa\n- Lomami\nFor more information on the methodology and data sources used during the production of this data, see the Data Release Notes.Dataset citation:Center for International Earth Science Information Network (CIESIN), Columbia University and Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, 2024. GRID3 COD - Schools v1.0. New York: GRID3. https://doi.org/10.7916/5ngz-fr94. Accessed <DAY MONTH YEAR>.Contacts and data queries:The authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Schools v1.0 dataset consists of school spatial data points with names and attributes in the following provinces of the Democratic Republic of the Congo (COD): Haut-Katanga, Kasa\u00ef, Kasa\u00ef-Oriental, Kinshasa, and Lomami.",
     "keywords": [
@@ -50,6 +47,9 @@
       "POI",
       "Schools"
     ],
+    "datetime": "2024-05-10T00:00:00Z",
+    "created": "2023-09-08T14:20:10Z",
+    "updated": "2023-10-05T10:11:12Z",
     "iso:topic_categories": [
       "003",
       "009",

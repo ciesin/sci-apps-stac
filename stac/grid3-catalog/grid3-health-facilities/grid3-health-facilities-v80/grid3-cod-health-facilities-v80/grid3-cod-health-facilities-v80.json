@@ -39,9 +39,6 @@
     5.134033
   ],
   "properties": {
-    "datetime": "2025-07-31T12:07:55Z",
-    "created": "2025-07-31T12:07:55Z",
-    "updated": "2025-12-22T11:20:26Z",
     "description": "The current version supersedes the GRID3 COD - Health Facilities v7.0. The following changes were made:\n- Added data for the provinces of Bas-Uele, Haut-Uele, Kwango, and Nord-Kivu\n- The data for Tanganyika was updated\nDownload province level data:\n- Bas-Uele\n- Equateur\n- Haut-Katanga\n- Haut-Lomami\n- Haut-Uele\n- Ituri\n- Kasa\u00ef\n- Kasa\u00ef-Central\n- Kasa\u00ef-Oriental\n- Kinshasa\n- Kongo-Central\n- Kwango\n- Kwilu\n- Lomami\n- Lualaba\n- Mai-Ndombe\n- Maniema\n- Mongala\n- Nord-Kivu\n- Nord-Ubangi\n- Sankuru\n- Sud-Kivu\n- Sud-Ubangi\n- Tanganyika\n- Tshopo\n- Tshuapa\nFor more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University, Minist\u00e8re de la Sant\u00e9 Publique, Hygi\u00e8ne et Pr\u00e9vention, Democratic Republic of the Congo, and GRID3. 2025. GRID3 COD - Health Facilities v8.0. New York: Columbia University. https://doi.org/10.7916/f1ft-y872. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Health Facilities v8.0 dataset consists of health facility points with name, location, health zone, and health area, among other attributes, for all the twenty-six provinces in the Democratic Republic of the Congo (COD).",
     "keywords": [
@@ -51,6 +48,9 @@
       "health facilities",
       "latest"
     ],
+    "datetime": "2025-07-31T12:07:55Z",
+    "created": "2025-07-31T12:07:55Z",
+    "updated": "2025-12-22T11:20:26Z",
     "iso:topic_categories": [
       "003",
       "009",

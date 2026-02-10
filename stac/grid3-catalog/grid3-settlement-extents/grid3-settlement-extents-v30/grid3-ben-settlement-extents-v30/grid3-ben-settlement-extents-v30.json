@@ -39,9 +39,6 @@
     12.405924
   ],
   "properties": {
-    "datetime": "2024-09-30T00:00:00Z",
-    "created": "2024-09-30T00:00:00Z",
-    "updated": "2024-09-24T15:33:48Z",
     "description": "The two layers contained within the GRID3 BEN - Settlement Extents v3.0 include:\n- GRID3_BEN_settlement_extents_v3.gpkg: a spatial layer representing settlement polygons.\n- GRID3_BEN_settlement_grid_v3.gpkg: a spatial layer representing the centroids of settled grid cells.\nThe current version supersedes GRID3 BEN - Settlement Extents v2.0; the following changes were made:\n- Development of a new methodology to derive settlement polygons with open data.\n- Estimate a probability value for settlement polygons\nFor more information on data inputs, methodology, and codebooks please see the Data Release Notes.\nRecommended Citation:\nCenter for International Earth Science Information Network (CIESIN), Columbia University. 2024. GRID3 BEN- Settlement Extents v3.0. New York: GRID3. https://doi.org/doi:10.7916/yen9-aj46. Accessed [DAY MONTH YEAR].\nTerms of use:\nUsers are free to download, store, access, use, copy, adapt, transform, alter, arrange, build upon, distribute and transmit this work and any derivative works. Attribution of the source must be provided, and further distribution of this work or derived work must maintain the same terms of data use and license as set forth in this Terms of Use.\nCopyright 2024. The Trustees of Columbia University in the City of New York.\nData license:\nThe data and accompanying document are licensed under a Creative Commons Attribution-ShareAlike 4.0 International, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0) and specified in legal code (https://creativecommons.org/licenses/by-sa/4.0/legalcode).\nContacts and data queries:\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 BEN - Settlement Extents v3.0 consists of a geographic representation of settlements in Benin, in two forms: 1) settlement polygons, and 2) spatial points depicting the centroids of settled grid cells at 3-arc seconds (or ~100 meters) contained within settlement polygons. Both layers include attributes as described in the codebooks. Data inputs and methodology are described in data release notes.",
     "keywords": [
@@ -52,6 +49,9 @@
       "Settlements",
       "v3"
     ],
+    "datetime": "2024-09-30T00:00:00Z",
+    "created": "2024-08-27T18:46:11Z",
+    "updated": "2024-09-24T15:33:48Z",
     "iso:topic_categories": [
       "013",
       "016"

@@ -39,9 +39,6 @@
     5.344301
   ],
   "properties": {
-    "datetime": "2026-01-08T00:00:00Z",
-    "created": "2026-01-08T00:00:00Z",
-    "updated": null,
     "description": "For more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2026. GRID3 COD - Roads v1.0. New York: Columbia University. https://doi.org/10.7916/00gb-e164. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The GRID3 COD - Roads v1.0 spatial dataset consists of road and path locations in Democratic Republic of the Congo.",
     "keywords": [
@@ -50,6 +47,8 @@
       "Roads",
       "roads"
     ],
+    "datetime": "2026-01-08T00:00:00Z",
+    "created": "2026-01-08T11:56:07Z",
     "iso:topic_categories": [
       "013",
       "016",
