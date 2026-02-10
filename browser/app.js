@@ -120,16 +120,18 @@ function renderItem(item, container) {
 
   // description
   if (item.properties?.description) {
-    const p = document.createElement("p");
-    p.textContent = item.properties.description;
-    body.appendChild(p);
+    const desc = document.createElement("div");
+    desc.className = "item-description";
+    desc.innerHTML = renderMarkdown(item.properties.description);
+    body.appendChild(desc);
   }
+
 
   // map preview
   if (item.bbox || item.geometry) {
     const mapDiv = document.createElement("div");
-    mapDiv.style.height = "200px";
-    mapDiv.style.margin = "10px 0";
+    mapDiv.className = "item-map";
+
     body.appendChild(mapDiv);
 
     setTimeout(() => renderMap(item, mapDiv), 0);
@@ -154,6 +156,21 @@ function renderItem(item, container) {
 
     ul.appendChild(li);
   }
+
+  function renderMarkdown(text) {
+    if (!text) return "";
+
+    return text
+      .replace(/^### (.*$)/gim, "<h4>$1</h4>")
+      .replace(/^## (.*$)/gim, "<h3>$1</h3>")
+      .replace(/^# (.*$)/gim, "<h2>$1</h2>")
+      .replace(/^\s*-\s+(.*)/gim, "<li>$1</li>")
+      .replace(/(<li>.*<\/li>)/gims, "<ul>$1</ul>")
+      .replace(/\n{2,}/g, "</p><p>")
+      .replace(/\n/g, "<br>")
+      .replace(/^(.*)$/gim, "<p>$1</p>");
+  }
+
 
   body.appendChild(ul);
   itemDiv.appendChild(header);

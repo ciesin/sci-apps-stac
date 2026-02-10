@@ -181,7 +181,7 @@ section > p {
 
 .level-catalog {
   margin-left: 0;
-  padding-left: 0;
+  padding-left: 2em;
   border-left: none;
 }
 
@@ -228,7 +228,20 @@ section > p {
   margin-left: 1rem;
 }
 
+
+
 /* ---------- Assets ---------- */
+
+.item-map {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  margin: 0.75rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 
 .item ul {
   margin: 0.4rem 0 0.6rem 1rem;
@@ -247,3 +260,33 @@ section > p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+
+
+/* ---------- radiant rendering ---------- */
+.item-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.item-description p {
+  margin: 0.4rem 0;
+}
+
+.item-description ul {
+  margin: 0.4rem 0 0.6rem 1.2rem;
+  padding-left: 1rem;
+}
+
+.item-description li {
+  margin: 0.2rem 0;
+}
+
+.item-description h2,
+.item-description h3,
+.item-description h4 {
+  margin: 0.6rem 0 0.3rem;
+  font-weight: 600;
+}
+
