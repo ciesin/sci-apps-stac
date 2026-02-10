@@ -12,6 +12,99 @@ function toggle(el, open) {
   el.style.display = open ? "block" : "none";
 }
 
+
+
+/* ---------------- Markdown Renderer ---------------- */
+
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function renderMarkdown(text) {
+  if (!text) return "";
+
+  // Escape HTML first (prevents injection)
+  const safe = escapeHtml(text);
+
+  const lines = safe.split("\n");
+
+  let html = "";
+  let inUl = false;
+  let inOl = false;
+
+  const closeLists = () => {
+    if (inUl) {
+      html += "</ul>";
+      inUl = false;
+    }
+    if (inOl) {
+      html += "</ol>";
+      inOl = false;
+    }
+  };
+
+  for (let rawLine of lines) {
+    const line = rawLine.trimEnd();
+
+    // blank line -> paragraph break
+    if (line.trim() === "") {
+      closeLists();
+      html += "<p></p>";
+      continue;
+    }
+
+    // unordered list: - item  or * item
+    const ulMatch = line.match(/^\s*[-*]\s+(.*)$/);
+    if (ulMatch) {
+      if (inOl) {
+        html += "</ol>";
+        inOl = false;
+      }
+      if (!inUl) {
+        html += "<ul>";
+        inUl = true;
+      }
+      html += `<li>${ulMatch[1]}</li>`;
+      continue;
+    }
+
+    // ordered list: 1. item
+    const olMatch = line.match(/^\s*\d+\.\s+(.*)$/);
+    if (olMatch) {
+      if (inUl) {
+        html += "</ul>";
+        inUl = false;
+      }
+      if (!inOl) {
+        html += "<ol>";
+        inOl = true;
+      }
+      html += `<li>${olMatch[1]}</li>`;
+      continue;
+    }
+
+    // normal line
+    closeLists();
+    // keep line breaks inside a paragraph
+    html += `<p>${line}</p>`;
+  }
+
+  closeLists();
+
+  // Remove empty paragraphs created by multiple blank lines
+  html = html.replace(/<p><\/p>/g, "");
+
+  return html;
+}
+
+
+
 /* ---------------- Entry ---------------- */
 
 const content = document.getElementById("content");
