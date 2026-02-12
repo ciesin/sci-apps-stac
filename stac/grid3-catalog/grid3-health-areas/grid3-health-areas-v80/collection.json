@@ -43,5 +43,24 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Health Areas v8.0",
+    "GRID3 Health Areas",
+    "grid3",
+    "health",
+    "areas",
+    "v80"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }

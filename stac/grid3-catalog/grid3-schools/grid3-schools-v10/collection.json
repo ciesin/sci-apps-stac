@@ -43,5 +43,23 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Schools v1.0",
+    "GRID3 Schools",
+    "grid3",
+    "schools",
+    "v10"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }

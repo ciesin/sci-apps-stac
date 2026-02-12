@@ -43,5 +43,24 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Religious Centers 1.0",
+    "GRID3 Religious Centers",
+    "grid3",
+    "religious",
+    "centers",
+    "10"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }

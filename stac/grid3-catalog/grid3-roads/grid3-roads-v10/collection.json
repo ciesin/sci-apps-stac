@@ -48,5 +48,23 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Roads v1.0",
+    "GRID3 Roads",
+    "grid3",
+    "roads",
+    "v10"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }

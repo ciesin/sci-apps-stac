@@ -298,5 +298,24 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Settlement Extents v3.0",
+    "GRID3 Settlement Extents",
+    "grid3",
+    "settlement",
+    "extents",
+    "v30"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }

@@ -39,13 +39,13 @@
     698374.960916
   ],
   "properties": {
-    "description": "The GRID3 COD - Travel Time Friction Surface v1.0 dataset is a spatial data layer in tiff format. The datasets contain 2 layers:\n-\nGRID3_COD_walk_travel_time_friction_surface_v1_0.tif - Applies walking speeds across the entire surface, adjusted for slope and elevation.\n-\nGRID3_COD_mix_travel_time_friction_surface_v1_0.tif - Applies motorized speeds on roads and walking speeds in all other areas.\nThe resolution is 30 m. The unit of measurement in both surfaces is minutes per meter.\nFor more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2026. GRID3 COD - Travel Time Friction Surface v1.0. New York: Columbia University. https://doi.org/10.7916/11yp-gs23. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
+    "description": "The GRID3 COD - Travel Time Friction Surface v1.0 dataset is a spatial data layer in tiff format. The datasets contain 2 layers:\n- GRID3_COD_walk_travel_time_friction_surface_v1_0.tif - Applies walking speeds across the entire surface, adjusted for slope and elevation.\n- GRID3_COD_mix_travel_time_friction_surface_v1_0.tif - Applies motorized speeds on roads and walking speeds in all other areas.\nThe resolution is 30 m. The unit of measurement in both surfaces is minutes per meter.\nFor more information on the methodology and data sources used during the production of this data, click here.\nDataset citation\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2026. GRID3 COD - Travel Time Friction Surface v1.0. New York: Columbia University. https://doi.org/10.7916/11yp-gs23. Accessed <DAY MONTH YEAR>.\nContacts and data queries\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. For dataset-related questions, please send an email to: info@ciesin.columbia.edu",
     "purpose": "The aim of this work is to generate two friction surfaces for modeling physical accessibility: one incorporating walking speed only, and another combining walking and motorized travel speeds. Motorized speeds are applied exclusively on roads that are present and passable by vehicles; in all other areas, walking speeds are used.",
     "keywords": [
       "COD",
-      "COD, Democratic Republic of the Congo",
       "Democratic Republic of the Congo",
-      "travel time, friction surface"
+      "friction surface",
+      "travel time"
     ],
     "datetime": "2026-01-09T00:00:00Z",
     "created": "2026-01-08T16:57:20Z",

@@ -26,11 +26,6 @@
       "title": "GRID3 data support"
     },
     {
-      "rel": "license",
-      "href": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "Catalog metadata licensed under CC BY 4.0"
-    },
-    {
       "rel": "child",
       "href": "./grid3-settlement-extents/catalog.json",
       "type": "application/json",
@@ -91,5 +86,6 @@
       "title": "CIESIN STAC"
     }
   ],
+  "license": "CC-BY-4.0",
   "title": "GRID3 Catalog"
 }

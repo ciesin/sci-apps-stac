@@ -48,5 +48,26 @@
       ]
     }
   },
-  "license": "other"
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "GRID3 Travel Time Friction Surface v1.0",
+    "GRID3 Travel Time Friction Surface",
+    "grid3",
+    "travel",
+    "time",
+    "friction",
+    "surface",
+    "v10"
+  ],
+  "providers": [
+    {
+      "name": "Center for International Earth Science Information Network (CIESIN)",
+      "roles": [
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://www.ciesin.columbia.edu"
+    }
+  ]
 }
