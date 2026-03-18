@@ -39,7 +39,8 @@
     13.8842
   ],
   "properties": {
-    "description": "The  GRID3 NGA - Roads v1dataset is a spatial data layer in OGC Geopackage format. The metadata file is included in xml format.\nDataset citation:\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2025. GRID3 NGA - Roads v1.0.New York: Columbia University. https://doi.org/10.7916/b42r-6w17. Accessed <DAY MONTH YEAR>.\nContacts and data queries:\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences.\nFor dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
+    "title": "GRID3 NGA - Roads v1.0",
+    "description": "The  GRID3 NGA - Roads v1dataset is a spatial data layer in OGC Geopackage format. The metadata file is included in xml format.\n\nDataset citation:  \n\nCenter for Integrated Earth System Information (CIESIN), Columbia University. 2025. GRID3 NGA - Roads v1.0.New York: Columbia University. https://doi.org/10.7916/b42r-6w17. Accessed <DAY MONTH YEAR>.\n\nContacts and data queries:\n\nThe authors of this dataset appreciate feedback regarding the data, including suggestions, discovery of errors, difficulties in using the data, and format preferences. \n\nFor dataset-related questions, please send an email to:  info@ciesin.columbia.edu",
     "purpose": "The spatial dataset consists of road and path locations in Nigeria.",
     "keywords": [
       "NGA",
@@ -115,8 +116,7 @@
     }
   },
   "collection": "grid3-roads-v10",
-  "title": "GRID3 NGA - Roads v1.0",
-  "license": "CC-BY-SA-4.0",
+  "license": "CC BY-SA 4.0",
   "providers": [
     {
       "name": "Center for Integrated Earth System Information (CIESIN)",

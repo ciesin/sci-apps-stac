@@ -39,7 +39,8 @@
     9.99908
   ],
   "properties": {
-    "description": "The data are provided in geodatabase file formats.\nFile name: GRID3_SLE_settlement_names_v1.0.gdb with the following layers:\n- GRID3_SLE_settlement_names_v1.0\n- codebook_settlement_names\nExtent: Sierra Leone\nCoordinate system: GCS WGS 1984\nFor full methodological details, please see data release notes available for download\u00a0here.Download the data as a\u00a0zip file.\nDataset citation:\nCenter for International Earth Science Information Network (CIESIN), Columbia University, Statistics Sierra Leone, and Sierra Leone Ministry of Basic and Senior Secondary Education. 2023. GRID3 SLE - Settlement Names v1. 0. New York: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/bxa4-bv46. Accessed DAY MONTH YEAR",
+    "title": "GRID3 SLE - Settlement Names v1.0",
+    "description": "The data are provided in geodatabase file formats.   \n\nFile name: GRID3_SLE_settlement_names_v1.0.gdb with the following layers:\n\n- GRID3_SLE_settlement_names_v1.0\n- codebook_settlement_names\n\nExtent: Sierra Leone\n\nCoordinate system: GCS WGS 1984 \n\nFor full methodological details, please see data release notes available for download\u00a0here.Download the data as a\u00a0zip file.\n\nDataset citation:\n\nCenter for International Earth Science Information Network (CIESIN), Columbia University, Statistics Sierra Leone, and Sierra Leone Ministry of Basic and Senior Secondary Education. 2023. GRID3 SLE - Settlement Names v1. 0. New York: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/bxa4-bv46. Accessed DAY MONTH YEAR",
     "purpose": "The GRID3 SLE - Settlement Names v1.0 dataset consists of settlement points with name, and location in Sierra Leone.",
     "keywords": [
       "SLE",
@@ -109,8 +110,7 @@
     }
   },
   "collection": "grid3-health-facilities-v10",
-  "title": "GRID3 SLE - Settlement Names v1.0",
-  "license": "proprietary",
+  "license": "CC BY 4.0",
   "providers": [
     {
       "name": "Center for International Earth Science Information Network (CIESIN)",

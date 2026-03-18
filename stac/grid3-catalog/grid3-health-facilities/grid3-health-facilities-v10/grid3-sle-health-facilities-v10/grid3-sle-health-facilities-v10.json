@@ -39,7 +39,8 @@
     9.977068
   ],
   "properties": {
-    "description": "The data is available in both spatial and tabular file formats.\nCoordinate system: GCS WGS 1984\nFor full methodological details, please see data release notes available for download here.Download the data as a zip file.\nCopyright\n2023.  Sierra Leone Ministry of Health and Sanitation (MoHS) and\nTrustees of Columbia University in the City of New York.\nDataset citation:\nSierra Leone Ministry of Health and Sanitation (MoHS) and Center for International Earth Science Information Network (CIESIN), Columbia University. 2023. Sierra Leone National Health Facilities Dataset Version 01. Palisades, NY: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/ag19-s334. Accessed DAY MONTH YEAR",
+    "title": "GRID3 SLE - Health Facilities v1.0",
+    "description": "The data is available in both spatial and tabular file formats.\n\nCoordinate system: GCS WGS 1984 \n\nFor full methodological details, please see data release notes available for download here.Download the data as a zip file.\n\nCopyright\n 2023.  Sierra Leone Ministry of Health and Sanitation (MoHS) and \nTrustees of Columbia University in the City of New York.\n\nDataset citation:\n\nSierra Leone Ministry of Health and Sanitation (MoHS) and Center for International Earth Science Information Network (CIESIN), Columbia University. 2023. Sierra Leone National Health Facilities Dataset Version 01. Palisades, NY: Geo-Referenced Infrastructure and Demographic Data for Development (GRID3). https://doi.org/10.7916/ag19-s334. Accessed DAY MONTH YEAR",
     "purpose": "The dataset consists of health facility points with name, location (where available), facility type, functionality, and ownership in Sierra Leone",
     "keywords": [
       "Health Facilities",
@@ -115,8 +116,7 @@
     }
   },
   "collection": "grid3-health-facilities-v10",
-  "title": "GRID3 SLE - Health Facilities v1.0",
-  "license": "proprietary",
+  "license": "CC BY 4.0",
   "providers": [
     {
       "name": "Center for International Earth Science Information Network (CIESIN)",
